@@ -24,9 +24,9 @@
 		</div>
 		<div id="menu">
 			<nav><ul>
-				<li class="current_page"><a href="#">Halaman Depan</a></li>
+				<li class="current_page"><a href="home">Halaman Depan</a></li>
 				<li><a href="#">Tentang Kami</a></li>
-				<li><a href="login.php">Login</a></li>	
+				<li><a href="login">Login</a></li>	
 			</ul></nav>
 		</div>
 		<div id="body">
