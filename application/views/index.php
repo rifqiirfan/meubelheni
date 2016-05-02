@@ -8,10 +8,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="js/jquery.min.js"></script>
 	<link rel="shortcut icon" href="img/mebelheny.ico"-->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
-	<link rel="stylesheet" type="text/css" href="css/style.css" >
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/> 
-	<link rel="stylesheet" type="text/css" href="css/owl.theme.css"/>
+	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/bootstrap.min.css" >
+	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/style.css" >
+	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/owl.carousel.css"/> 
+	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/owl.theme.css"/>
 	<script src="js/style.js"></script>
 	<script src="js/owl.carousel.js"></script>
 
