@@ -12,28 +12,28 @@
 	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/style.css" >
 	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/owl.carousel.css"/> 
 	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/owl.theme.css"/>
-	<script src="js/style.js"></script>
-	<script src="js/owl.carousel.js"></script>
+	<script src="<?=base_url();?>assets/js/style.js"></script>
+	<script src="<?=base_url();?>assets/js/owl.carousel.js"></script>
 
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="header" id="container">
 		<div id="logo">
-			<a href="#"><img src="img/mebelheny.png" height="60px"></a>
+			<a href="#"><img src="<?=base_url();?>assets/img/mebelheny.png" height="60px"></a>
 		</div>
 		<div id="menu">
 			<nav><ul>
 				<li class="current_page"><a href="#">Halaman Depan</a></li>
 				<li><a href="#">Tentang Kami</a></li>
-				<li><a href="login">Login</a></li>	
+				<li><a href="login.php">Login</a></li>	
 			</ul></nav>
 		</div>
 		<div id="body">
 			<div id="owl-demo" class="owl-carousel"> <!--menampilkan slide show untuk halaman depan website LuckyRain-->
-				<div><img src="img/slide1.jpg" width="100%"></div>
-				<div><img src="img/slide2.jpg" width="100%"></div>
-				<div><img src="img/slide3.jpg" width="100%"></div>
+				<div><img src="<?=base_url();?>assets/img/slide1.jpg" width="100%"></div>
+				<div><img src="<?=base_url();?>assets/img/slide2.jpg" width="100%"></div>
+				<div><img src="<?=base_url();?>assets/img/slide3.jpg" width="100%"></div>
 			</div>
 			<div id="sidebar">
 				<h1>KATEGORI</h1>
@@ -51,7 +51,7 @@
 		<div class="footer">
 			<div class="container">
 				<div class="col-md-3 footer-left">
-					<a href="index.html"><img src="img/mebelheny.png" width="100px" alt=""></a>
+					<a href="index.html"><img src="<?=base_url();?>assets/img/mebelheny.png" width="100px" alt=""></a>
 					<p class="footer-class">Jalan Pangeran Diponegro No. 11 Ngawi, Jawa Timur<br>Telp. (0351) 908201</p>
 				</div>
 				<div class="col-md-2 footer-middle">
