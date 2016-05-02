@@ -32,8 +32,8 @@
 
       $data = array(
         'id_barang' => $last_id,
-        // 'tgl_masuk' => date('Y-m-d', strtotime($tgl_masuk)),
-        'harga' => $tgl_masuk,
+        'tgl_masuk' => date('Y-m-d', strtotime($tgl_masuk)),
+        'harga' => $harga,
         'jumlah' => $jumlah,
         'keterangan' => $keterangan
       );
