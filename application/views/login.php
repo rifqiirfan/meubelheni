@@ -22,12 +22,12 @@
     <div class="content" id="login">
         <h1>Silakan masuk ke halaman ini!</h1>
         <form action="login" method="post">
-            <input type="username" placeholder="Username" name = "username"/>
-            <input type="password" placeholder="Password" name = "password"/>
             <select name="status">
                 <option value="super admin">Super Admin</option>
                 <option value="admin">Admin</option>
             </select>
+            <input type="password" placeholder="Password" name = "password"/>
+            
         </form>
     </div>
     <div class="footer">
