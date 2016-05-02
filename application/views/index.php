@@ -6,8 +6,8 @@
 	<title>Mebel Heni</title>
 	<meta charset="UTF=8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="js/jquery.min.js"></script>
-	<link rel="shortcut icon" href="img/mebelheny.ico"-->
+	<script src="<?=base_url();?>assets/js/jquery.min.js"></script>
+	<link rel="shortcut icon" href="<?=base_url();?>assets/img/mebelheny.ico"-->
 	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/bootstrap.min.css" >
 	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/style.css" >
 	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/owl.carousel.css"/> 
