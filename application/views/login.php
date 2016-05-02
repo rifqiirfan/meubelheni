@@ -3,13 +3,13 @@
     <title>Login || Mebel Heni</title>
    <meta charset="UTF=8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="<?=base_url();?>css/bootstrap.min.css" >
-    <link rel="stylesheet" type="text/css" href="<?=base_url();?>css/style.css" >
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/css/style.css" >
     <link rel="shortcut icon" href="img/mebelheny.ico"-->
 </head>
 <body>
     <div class="header" id="container">
-        <a href="/projectMMC"><img src="images/logo_mmc.png"></a>
+        <a href="/projectMMC"><img src="<?php echo base_url();?>/assets/img/mebelheny.png" height="60px"></a>
         <div id="menu">
             <nav><ul>
                 <nav><ul>
@@ -22,18 +22,18 @@
     <div class="content" id="login">
         <h1>Silakan masuk ke halaman ini!</h1>
         <form action="login" method="post">
-            <input type="username" placeholder="Username" name = "username"/>
-            <input type="password" placeholder="Password" name = "password"/>
             <select name="status">
                 <option value="super admin">Super Admin</option>
                 <option value="admin">Admin</option>
             </select>
+            <input type="password" placeholder="Password" name = "password"/>
+            
         </form>
     </div>
     <div class="footer">
         <div class="container">
                 <div class="col-md-3 footer-left">
-                    <a href="index.html"><img src="img/mebelheny.png" width="100px" alt=""></a>
+                    <a href="index.html"><img src="<?php echo base_url();?>/assets/img/mebelheny.png" width="120px" alt=""></a>
                     <p class="footer-class">Jalan Pangeran Diponegro No. 11 Ngawi, Jawa Timur<br>Telp. (0351) 908201</p>
                 </div>
                 <div class="col-md-2 footer-middle">
