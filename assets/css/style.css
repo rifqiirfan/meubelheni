@@ -54,14 +54,15 @@ body{
 	background-color: #9F9F9F;
 	width: 25%;
 	padding: 18px;
-	margin: 0 0 ;
+	margin: 0 0;
+	
 }
 #kategori li {
 	list-style: none;  
 }
 
 #kategori li a {
-	color: #FFFFFF;;
+	color: #FFFFFF;
 	display: block;
 	padding: 12px;
 	font-size: 16px;
@@ -83,37 +84,8 @@ body{
 	color:#FFFFFF;
 }
 /*Konten bawah slide show*/
-.shoes-grid-left{
-	width:100%;
-}
-.con-sed-grid{
-	border: 1px solid #ddd;
-	padding: 1.5em 1em 2em;
-	margin: 0em 3% 0 0;
-	width: 48%;
-}
-.elit-grid{
-	float: left;
-width: 49%;
-}
-.elit-grid h4{
-	margin: 0;
-	font-size: 1.3em;	
-	font-weight: 700;
-}
-.elit-grid  label{
-	margin: 0;
-	font-size: 1.2em;
-	color: #000;
-	font-weight: 700;
-}
+#barang{
 
-.elit-grid p{
-	margin: 0;
-	font-size: 1em;
-	color: #000;
-	width: 80%;
-	padding: 0em 0 1.5em;
 }
 /*Form khusus Halaman Login*/
 .content{
@@ -238,4 +210,34 @@ p.footer-class a{
 }
 p.footer-class a:hover{
   text-decoration:underline;
+}
+
+.grid-chain-bottom {
+	border-top: 1px solid #ddd;
+}
+.star-price {
+	padding: 1em 0.5em;
+}
+.dolor-grid{
+	float:left;
+}
+span.actual {
+	font-weight: 500; 
+	color:#1DBAA5;
+    font-weight: 700; 
+    font-size:1.2em;
+}
+span.dolor-left-grid{
+	font-size: 1.7em;
+}
+
+a.now-get{
+	font-size: 1.1em;
+	color:#fff;
+	padding:0.6em 0.8em;
+	background:#323A45;
+	text-decoration: none;
+}
+.get-cart-in{
+	float:right;
 }

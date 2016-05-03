@@ -5,12 +5,13 @@
   <title>Login || Mebel Heni</title>
   <meta charset="UTF=8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/css/bootstrap.min.css" >
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/css/style.css" >
   <link rel="shortcut icon" href="<?=base_url();?>assets/img/mebelheny.ico"-->
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/css/bootstrap.min.css" >
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/css/style.css">
+  <link rel="shortcut icon" href="<?=base_url();?>assets/img/mebelheny.ico"-->
+  <script src="<?=base_url();?>assets/js/bootstrap.min.js"></script>
 </head>
 <body>
-
   <nav class="navbar navbar-inverse visible-xs">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -33,7 +34,6 @@
       </div>
     </div>
   </nav>
-
   <div class="container-fluid">
     <div class="row content">
       <div class="col-sm-3 sidenav hidden-xs">

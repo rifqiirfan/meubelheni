@@ -1,5 +1,3 @@
-<?php
-?>
 <!doctype html>
 <html>
 <head>
@@ -13,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/owl.carousel.css"/> 
 	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/owl.theme.css"/>
 	<script src="<?=base_url();?>assets/js/style.js"></script>
+	<script src="<?=base_url();?>assets/js/bootstrap.min.js"></script>
 	<script src="<?=base_url();?>assets/js/owl.carousel.js"></script>
 
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
@@ -35,47 +34,73 @@
 				<div><img src="<?=base_url();?>assets/img/slide2.jpg" width="100%"></div>
 				<div><img src="<?=base_url();?>assets/img/slide3.jpg" width="100%"></div>
 			</div>
-			<div class="shoes-grid-left">
-				<a href="single.html">				 
-					<div class="col-md-6 con-sed-grid">
-
-						<div class=" elit-grid"> 
-
-							<h4>consectetur  elit</h4>
-							<label>FOR ALL PURCHASE VALUE</label>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
-							<span class="on-get">GET NOW</span>						
-						</div>						
-						<img class="img-responsive shoe-left" src="images/sh.jpg" alt=" " />
-
-						<div class="clearfix"> </div>
-
-					</div>
-				</a>
-				<a href="single.html">	
-					<div class="col-md-6 con-sed-grid sed-left-top">
-						<div class=" elit-grid"> 
-							<h4>consectetur  elit</h4>
-							<label>FOR ALL PURCHASE VALUE</label>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
-							<span class="on-get">GET NOW</span>
-						</div>		
-						<img class="img-responsive shoe-left" src="images/wa.jpg" alt=" " />
-
-						<div class="clearfix"> </div>
-					</div>
-				</a>
+			<div class="content">
+				<div id="sidebar">
+					<h1>KATEGORI</h1>
+					<ul id="kategori">
+						<li><a href="#meja">Meja</a></li>
+						<li><a href="#kursi">Kursi</a></li>
+						<li><a href="#sofa">Sofa</a></li>
+						<li><a href="#lemari">Lemari</a></li>
+						<li><a href="#kasur">Kasur</a></li>
+						<li><a href="#loker">Loker</a></li>
+					</ul>
+				</div>
+				<div id="barang">
+					
+				</div>
 			</div>
-			<div id="sidebar">
-				<h1>KATEGORI</h1>
-				<ul id="kategori">
-					<li><a href="#meja">Meja</a></li>
-					<li><a href="#kursi">Kursi</a></li>
-					<li><a href="#sofa">Sofa</a></li>
-					<li><a href="#lemari">Lemari</a></li>
-					<li><a href="#kasur">Kasur</a></li>
-					<li><a href="#loker">Loker</a></li>
-				</ul>
+			<div class="products">
+				<h5 class="latest-product">LATEST PRODUCTS</h5>	
+				<a class="view-all" href="product.html">VIEW ALL<span> </span></a> 		     
+			</div>
+			<div class="product-left">
+				<div class="col-md-4 chain-grid">
+					<a href="single.html"><img class="img-responsive chain" src="<?=base_url();?>assets/img/sofa.jpg" alt=" " /></a>
+					<span class="star"> </span>
+					<div class="grid-chain-bottom">
+						<h6><a href="single.html">Sofa Kulit Domba Garut</a></h6>
+						<div class="star-price">
+							<div class="dolor-grid"> 
+								<span class="actual">300$</span>
+								<span class="reducedfrom">400$</span>
+							</div>
+							<a class="now-get get-cart" href="#">ADD TO CART</a> 
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 chain-grid">
+					<a href="single.html"><img class="img-responsive chain" src="<?=base_url();?>assets/img/lemari 3.jpg" alt=" " /></a>
+					<span class="star"> </span>
+					<div class="grid-chain-bottom">
+						<h6><a href="single.html"></a>Lemari Kayu Meranti Asli Kalimantan</h6>
+						<div class="star-price">
+							<div class="dolor-grid"> 
+								<span class="actual">300$</span>
+								<span class="reducedfrom">400$</span>
+							</div>
+							<a class="now-get get-cart" href="#">ADD TO CART</a> 
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 chain-grid grid-top-chain">
+					<a href="single.html"><img class="img-responsive chain" src="<?=base_url();?>assets/img/kasur 2.jpg" alt=" " /></a>
+					<span class="star"> </span>
+					<div class="grid-chain-bottom">
+						<h6><a href="single.html">Kasur Tidur Putri Salju</a></h6>
+						<div class="star-price">
+							<div class="dolor-grid"> 
+								<span class="actual">300$</span>
+								<span class="reducedfrom">400$</span>
+							</div>
+							<a class="now-get get-cart" href="#">ADD TO CART</a> 
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
 			</div>
 		</div>
 		<div class="footer">
