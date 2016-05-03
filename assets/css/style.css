@@ -136,7 +136,7 @@ width: 49%;
 	text-align:center;
 	color:#fff;
 }
-form{
+form #login{
 	background:rgba(22,73,112,1.0);
 	padding:4% 4%;
 	margin-bottom: -10px;
