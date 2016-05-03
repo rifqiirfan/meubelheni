@@ -1,13 +1,11 @@
 $(document).ready(function() {
-
-  $("#owl-demo").owlCarousel({
-    autoPlay : 3000,
-    stopOnHover : true,
-    navigation:true,
-    paginationSpeed : 1000,
-    goToFirstSpeed : 2000,
-    singleItem : true,
-    autoHeight : true,
-    transitionStyle:"goDown"
-});
+	$('.owl-carousel').owlCarousel({
+    items:1,
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true
+})
 });

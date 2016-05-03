@@ -30,10 +30,41 @@
 			</ul></nav>
 		</div>
 		<div id="body">
-			<div id="owl-demo" class="owl-carousel"> <!--menampilkan slide show untuk halaman depan website LuckyRain-->
+			<div class="owl-carousel">
 				<div><img src="<?=base_url();?>assets/img/slide1.jpg" width="100%"></div>
 				<div><img src="<?=base_url();?>assets/img/slide2.jpg" width="100%"></div>
 				<div><img src="<?=base_url();?>assets/img/slide3.jpg" width="100%"></div>
+			</div>
+			<div class="shoes-grid-left">
+				<a href="single.html">				 
+					<div class="col-md-6 con-sed-grid">
+
+						<div class=" elit-grid"> 
+
+							<h4>consectetur  elit</h4>
+							<label>FOR ALL PURCHASE VALUE</label>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
+							<span class="on-get">GET NOW</span>						
+						</div>						
+						<img class="img-responsive shoe-left" src="images/sh.jpg" alt=" " />
+
+						<div class="clearfix"> </div>
+
+					</div>
+				</a>
+				<a href="single.html">	
+					<div class="col-md-6 con-sed-grid sed-left-top">
+						<div class=" elit-grid"> 
+							<h4>consectetur  elit</h4>
+							<label>FOR ALL PURCHASE VALUE</label>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
+							<span class="on-get">GET NOW</span>
+						</div>		
+						<img class="img-responsive shoe-left" src="images/wa.jpg" alt=" " />
+
+						<div class="clearfix"> </div>
+					</div>
+				</a>
 			</div>
 			<div id="sidebar">
 				<h1>KATEGORI</h1>
@@ -45,7 +76,6 @@
 					<li><a href="#kasur">Kasur</a></li>
 					<li><a href="#loker">Loker</a></li>
 				</ul>
-
 			</div>
 		</div>
 		<div class="footer">
@@ -88,4 +118,4 @@
 			</div>
 		</div>
 	</body>
-</html>
+	</html>
