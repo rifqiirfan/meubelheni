@@ -9,19 +9,20 @@
 </head>
 <body>
     <div class="header" id="container">
-        <a href=""><img src="<?php echo base_url();?>/assets/img/mebelheny.png" height="60px"></a>
+        <div id="logo">
+            <a href="home"><img src="<?=base_url();?>assets/img/mebelheny.png" height="60px"></a>
+        </div>
         <div id="menu">
             <nav><ul>
-                <nav><ul>
-                <li class="current_page"><a href="home">Halaman Depan</a></li>
+                <li><a href="home">Halaman Depan</a></li>
                 <li><a href="#">Tentang Kami</a></li>
-                <li><a href="login">Login</a></li>
+                <li class="current_page"><a href="login">Login</a></li>  
             </ul></nav>
         </div>
     </div>
     <div class="content" id="login">
         <h1>Silakan masuk ke halaman ini!</h1>
-        <form action="login" method="post">
+        <form action="login" method="post" id=login>
             <select name="status">
                 <option value="super admin">Super Admin</option>
                 <option value="admin">Admin</option>
