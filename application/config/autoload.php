@@ -40,7 +40,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $autoload['packages'] = array();
-$autoload['helper'] = array('url');
 /*
 | -------------------------------------------------------------------
 |  Auto-load Libraries
@@ -58,7 +57,7 @@ $autoload['helper'] = array('url');
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('database');
+$autoload['libraries'] = array('database', 'session', 'ion_auth');
 
 /*
 | -------------------------------------------------------------------

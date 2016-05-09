@@ -8,7 +8,7 @@
 	<link rel="shortcut icon" href="<?=base_url();?>assets/img/mebelheny.ico"-->
 	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/bootstrap.min.css" >
 	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/style.css" >
-	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/owl.carousel.css"/> 
+	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/owl.carousel.css"/>
 	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/owl.theme.css"/>
 	<script src="<?=base_url();?>assets/js/style.js"></script>
 	<script src="<?=base_url();?>assets/js/bootstrap.min.js"></script>
@@ -25,7 +25,7 @@
 			<nav><ul>
 				<li class="current_page"><a href="home">Halaman Depan</a></li>
 				<li><a href="#">Tentang Kami</a></li>
-				<li><a href="login">Login</a></li>	
+				<li><a href="<?= site_url('auth/logout') ?>">Logout</a></li>	
 			</ul></nav>
 		</div>
 		<div id="body">
@@ -47,12 +47,12 @@
 					</ul>
 				</div>
 				<div id="barang">
-					
+
 				</div>
 			</div>
 			<div class="products">
-				<h5 class="latest-product">LATEST PRODUCTS</h5>	
-				<a class="view-all" href="product.html">VIEW ALL<span> </span></a> 		     
+				<h5 class="latest-product">LATEST PRODUCTS</h5>
+				<a class="view-all" href="product.html">VIEW ALL<span> </span></a>
 			</div>
 			<div class="product-left">
 				<div class="col-md-4 chain-grid">
@@ -61,11 +61,11 @@
 					<div class="grid-chain-bottom">
 						<h6><a href="single.html">Sofa Kulit Domba Garut</a></h6>
 						<div class="star-price">
-							<div class="dolor-grid"> 
+							<div class="dolor-grid">
 								<span class="actual">300$</span>
 								<span class="reducedfrom">400$</span>
 							</div>
-							<a class="now-get get-cart" href="#">ADD TO CART</a> 
+							<a class="now-get get-cart" href="#">ADD TO CART</a>
 							<div class="clearfix"> </div>
 						</div>
 					</div>
@@ -76,11 +76,11 @@
 					<div class="grid-chain-bottom">
 						<h6><a href="single.html"></a>Lemari Kayu Meranti Asli Kalimantan</h6>
 						<div class="star-price">
-							<div class="dolor-grid"> 
+							<div class="dolor-grid">
 								<span class="actual">300$</span>
 								<span class="reducedfrom">400$</span>
 							</div>
-							<a class="now-get get-cart" href="#">ADD TO CART</a> 
+							<a class="now-get get-cart" href="#">ADD TO CART</a>
 							<div class="clearfix"> </div>
 						</div>
 					</div>
@@ -91,11 +91,11 @@
 					<div class="grid-chain-bottom">
 						<h6><a href="single.html">Kasur Tidur Putri Salju</a></h6>
 						<div class="star-price">
-							<div class="dolor-grid"> 
+							<div class="dolor-grid">
 								<span class="actual">300$</span>
 								<span class="reducedfrom">400$</span>
 							</div>
-							<a class="now-get get-cart" href="#">ADD TO CART</a> 
+							<a class="now-get get-cart" href="#">ADD TO CART</a>
 							<div class="clearfix"> </div>
 						</div>
 					</div>
@@ -120,7 +120,7 @@
 					<ul class="term">
 						<li><a href="#">terms and conditions</a> </li>
 						<li><a href="#">  markito in the press</a></li>
-						<li ><a href="#" >  testimonials</a></li>	
+						<li ><a href="#" >  testimonials</a></li>
 					</ul>
 					<ul class="term">
 						<li><a href="#">join us</a> </li>

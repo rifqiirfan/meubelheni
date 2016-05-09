@@ -10,7 +10,7 @@
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 550px}
-    
+
     /* Set gray background color and 100% height */
     .sidenav {
       background-color: #f1f1f1;
@@ -19,7 +19,7 @@
 
     /* On small screens, set height to 'auto' for the grid */
     @media screen and (max-width: 767px) {
-      .row.content {height: auto;} 
+      .row.content {height: auto;}
     }
   </style>
 </head>
@@ -31,7 +31,7 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
+          <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#">Mebel Heni</a>
       </div>
@@ -120,21 +120,21 @@
             <div class="well">
               <form role="form">
         <div class="form-group">
-           
+
           <label for="exampleInputEmail1">
             Email address
           </label>
           <input type="email" class="form-control" id="exampleInputEmail1" />
         </div>
         <div class="form-group">
-           
+
           <label for="exampleInputPassword1">
             Password
           </label>
           <input type="password" class="form-control" id="exampleInputPassword1" />
         </div>
         <div class="form-group">
-           
+
           <label for="exampleInputFile">
             File input
           </label>
@@ -144,11 +144,11 @@
           </p>
         </div>
         <div class="checkbox">
-           
+
           <label>
             <input type="checkbox" /> Check me out
           </label>
-        </div> 
+        </div>
         <button type="submit" class="btn btn-default">
           Submit
         </button>
@@ -159,5 +159,6 @@
       </div>
     </div>
   </div>
+  <a href="<?= site_url('auth/logout') ?>">Logout</a>
 </body>
 </html>
