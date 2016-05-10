@@ -16,20 +16,45 @@
             <nav><ul>
                 <li><a href="home">Halaman Depan</a></li>
                 <li><a href="#">Tentang Kami</a></li>
-                <li class="current_page"><a href="login">Login</a></li>  
+                <li class="current_page"><a href="login">Login</a></li>
             </ul></nav>
         </div>
     </div>
     <div class="content" id="login">
-        <h1>Silakan masuk ke halaman ini!</h1>
+      <?php if(isset($message)){?>
+      <div id="infoMessage"><?php echo $message;?></div>
+      <?php } ?>
+      <?php echo form_open("login");?>
+
+        <p>
+          <?php echo lang('login_identity_label', 'identity');?>
+          <?php echo form_input($identity);?>
+        </p>
+
+        <p>
+          <?php echo lang('login_password_label', 'password');?>
+          <?php echo form_input($password);?>
+        </p>
+
+        <p>
+          <?php echo lang('login_remember_label', 'remember');?>
+          <?php echo form_checkbox('remember', '1', FALSE, 'id="remember"');?>
+        </p>
+
+
+        <p><?php echo form_submit('submit', lang('login_submit_btn'));?></p>
+
+      <?php echo form_close();?>
+
+        <!-- <h1>Silakan masuk ke halaman ini!</h1>
         <form action="login" method="post" id=login>
             <select name="status">
                 <option value="super admin">Super Admin</option>
                 <option value="admin">Admin</option>
             </select>
             <input type="password" placeholder="Password" name = "password"/>
-            
-        </form>
+
+        </form> -->
     </div>
     <div class="footer">
         <div class="container">
@@ -48,7 +73,7 @@
                     <ul class="term">
                         <li><a href="#">terms and conditions</a> </li>
                         <li><a href="#">  markito in the press</a></li>
-                        <li ><a href="#" >  testimonials</a></li>   
+                        <li ><a href="#" >  testimonials</a></li>
                     </ul>
                     <ul class="term">
                         <li><a href="#">join us</a> </li>

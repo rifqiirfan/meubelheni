@@ -20,7 +20,7 @@ class Auth extends CI_Controller {
 		if (!$this->ion_auth->logged_in()){
 			// redirect them to the login page
 			redirect('auth/login', 'refresh');
-		}elseif($this->ion_auth->in_group('member')){
+		}elseif($this->ion_auth->in_group('members')){
 			//if the user is an employee
 			$this->load->view('admin/dashboard_view');
 			// $this->load->view('admin');
@@ -64,7 +64,15 @@ class Auth extends CI_Controller {
 				//if the login is successful
 				//redirect them back to the home page
 				$this->session->set_flashdata('message', $this->ion_auth->messages());
-				redirect('/', 'refresh');
+				// redirect('admin/dashboard_view', 'refresh');
+				if($this->ion_auth->is_admin()){
+					// $this->load->view('superadmin/dashboard_view');
+					redirect('superadmin/dashboard_view');
+				}else if($this->ion_auth->in_group('members')){
+					$this->load->view('admin/dashboard_view');
+				}else{
+					redirect('/', 'refresh');
+				}
 			}
 			else
 			{

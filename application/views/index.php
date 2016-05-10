@@ -25,7 +25,11 @@
 			<nav><ul>
 				<li class="current_page"><a href="home">Halaman Depan</a></li>
 				<li><a href="#">Tentang Kami</a></li>
-				<li><a href="<?= site_url('auth/logout') ?>">Logout</a></li>	
+				<?php if($this->ion_auth->logged_in()) {?>
+				<li><a href="<?= site_url('auth/logout') ?>">Logout</a></li>
+				<?php }else{  ?>
+				<li><a href="<?= site_url('auth/login') ?>">Login</a>
+				<?php } ?>
 			</ul></nav>
 		</div>
 		<div id="body">
