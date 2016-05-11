@@ -13,7 +13,12 @@ class Barang extends CI_Controller{
   }
 
   function tambah(){
-    $this->load->view('barang\tambah_view');
+    if($this->ion_auth->is_admin()){
+        $this->load->view('barang\tambah_view');
+    }else{
+        return show_error('You have no authorization to view this page.');
+    }
+
     // if($this->ion_auth->is_admin()){
     //   redirect('superadmin/barang/tambah');
     // }else{
