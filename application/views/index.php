@@ -25,7 +25,7 @@
 			<nav><ul>
 				<li class="current_page"><a href="home">Halaman Depan</a></li>
 				<li><a href="#">Tentang Kami</a></li>
-				<li><a href="<?= site_url('login') ?>">Logout</a></li>	
+				<li><a href="<?= site_url('login') ?>">Login</a></li>	
 			</ul></nav>
 		</div>
 		<div id="body">
@@ -56,7 +56,7 @@
 			</div>
 			<div class="product-left">
 				<div class="col-md-4 chain-grid">
-					<a href="single.html"><img class="img-responsive chain" src="<?=base_url();?>assets/img/sofa.jpg" alt=" " /></a>
+					<a href="single.html"><img height="150px" src="<?=base_url();?>assets/img/sofa.jpg" alt=" " /></a>
 					<span class="star"> </span>
 					<div class="grid-chain-bottom">
 						<h6><a href="single.html">Sofa Kulit Domba Garut</a></h6>
@@ -71,7 +71,7 @@
 					</div>
 				</div>
 				<div class="col-md-4 chain-grid">
-					<a href="single.html"><img class="img-responsive chain" src="<?=base_url();?>assets/img/lemari 3.jpg" alt=" " /></a>
+					<a href="single.html"><img height="150px" src="<?=base_url();?>assets/img/lemari 3.jpg" alt=" " /></a>
 					<span class="star"> </span>
 					<div class="grid-chain-bottom">
 						<h6><a href="single.html"></a>Lemari Kayu Meranti Asli Kalimantan</h6>
@@ -86,7 +86,7 @@
 					</div>
 				</div>
 				<div class="col-md-4 chain-grid grid-top-chain">
-					<a href="single.html"><img class="img-responsive chain" src="<?=base_url();?>assets/img/kasur 2.jpg" alt=" " /></a>
+					<a href="single.html"><img height="150px" src="<?=base_url();?>assets/img/kasur 2.jpg" alt=" " /></a>
 					<span class="star"> </span>
 					<div class="grid-chain-bottom">
 						<h6><a href="single.html">Kasur Tidur Putri Salju</a></h6>

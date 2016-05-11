@@ -55,7 +55,7 @@ body{
 	width: 25%;
 	padding: 18px;
 	margin: 0 0;
-	
+	float:left;
 }
 #kategori li {
 	list-style: none;  
