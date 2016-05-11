@@ -25,7 +25,11 @@
 			<nav><ul>
 				<li class="current_page"><a href="home">Halaman Depan</a></li>
 				<li><a href="#">Tentang Kami</a></li>
+<<<<<<< HEAD
 				<li><a href="<?= site_url('auth/login') ?>">Login</a></li>	
+=======
+				<li><a href="<?= site_url('auth/logout') ?>">Logout</a></li>	
+>>>>>>> parent of d9568ed... update index
 			</ul></nav>
 		</div>
 		<div id="body">
