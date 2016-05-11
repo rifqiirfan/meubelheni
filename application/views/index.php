@@ -111,7 +111,7 @@
 			<div class="container">
 				<div class="col-md-3 footer-left">
 					<a href="index.html"><img src="<?=base_url();?>assets/img/mebelheny.png" width="100px" alt=""></a>
-					<p class="footer-class">Jalan Pangeran Diponegro No. 11 Ngawi, Jawa Timur<br>Telp. (0351) 908201</p>
+					<p class="footer-class">Jalan Sultan Agung No. 38, Ketanggi, Ngawi, Jawa Timur<br>Telp. (0351) 908201</p>
 				</div>
 				<div class="col-md-2 footer-middle">
 					<ul>
