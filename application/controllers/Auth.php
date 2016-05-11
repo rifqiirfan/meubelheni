@@ -65,14 +65,15 @@ class Auth extends CI_Controller {
 				//redirect them back to the home page
 				$this->session->set_flashdata('message', $this->ion_auth->messages());
 				// redirect('admin/dashboard_view', 'refresh');
-				if($this->ion_auth->is_admin()){
-					// $this->load->view('superadmin/dashboard_view');
-					redirect('superadmin');
-				}else if($this->ion_auth->in_group('members')){
-					redirect('admin');
-				}else{
-					redirect('/', 'refresh');
-				}
+				redirect('dashboard');
+				// if($this->ion_auth->is_admin()){
+				// 	// $this->load->view('superadmin/dashboard_view');
+				// 	redirect('superadmin');
+				// }else if($this->ion_auth->in_group('members')){
+				// 	redirect('admin');
+				// }else{
+				// 	redirect('/', 'refresh');
+				// }
 			}
 			else
 			{

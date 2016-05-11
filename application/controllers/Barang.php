@@ -14,6 +14,11 @@ class Barang extends CI_Controller{
 
   function tambah(){
     $this->load->view('barang\tambah_view');
+    // if($this->ion_auth->is_admin()){
+    //   redirect('superadmin/barang/tambah');
+    // }else{
+    //
+    // }
   }
 
   function tambah_barang(){
