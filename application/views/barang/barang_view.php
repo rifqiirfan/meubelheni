@@ -24,9 +24,9 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Halaman Depan</a></li>
-          <li><a href="#">Tambah Stok Barang</a></li>
-          <li><a href="#">Lihat Stok Barang</a></li>
+          <li class="active"><a href="<?= site_url('dashboard') ?>">Halaman Depan</a></li>
+          <li><a href="<?= site_url('barang/tambah') ?>">Tambah Stok Barang</a></li>
+          <li><a href="<?= site_url('barang') ?>">Lihat Stok Barang</a></li>
           <li><a href="#">Rekap Barang Masuk</a></li>
           <li><a href="#">Rekap Barang Keluar</a></li>
           <li><a href="#">Rekap Laba</a></li>

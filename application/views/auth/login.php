@@ -49,11 +49,10 @@
 
         <?php echo form_close();?>
 
-
 <div class="footer">
-    <div class="container">
+        <div class="container">
             <div class="col-md-3 footer-left">
-                <a href="index.html"><img src="<?php echo base_url();?>/assets/img/mebelheny.png" width="120px" alt=""></a>
+                <a href="index.html"><img src="<?=base_url();?>assets/img/mebelheny.png" width="100px" alt=""></a>
                 <p class="footer-class">Jalan Pangeran Diponegro No. 11 Ngawi, Jawa Timur<br>Telp. (0351) 908201</p>
             </div>
             <div class="col-md-2 footer-middle">
@@ -87,6 +86,7 @@
                 </ul>
             </div>
             <div class="clearfix"> </div>
-</div>
+        </div>
+    </div>
 </body>
 </html>
