@@ -7,13 +7,23 @@ class Barang extends CI_Controller{
   }
 
   function index(){
-    $this->load->model('BarangModel');
-    $this->data['barang'] = $this->BarangModel->getBarang();
-    $this->load->view('barang\barang_view', $this->data);
+    if($this->ion_auth->logged_in()){
+        $this->load->model('BarangModel');
+        $this->data['barang'] = $this->BarangModel->getBarang();
+        $this->load->view('barang\barang_view', $this->data);
+    }else{
+        return show_error('You must log in to view this page.');
+    }
+
   }
 
   function tambah(){
-    $this->load->view('barang\tambah_view');
+    if($this->ion_auth->is_admin()){
+        $this->load->view('barang\tambah_view');
+    }else{
+        return show_error('You have no authorization to view this page.');
+    }
+
     // if($this->ion_auth->is_admin()){
     //   redirect('superadmin/barang/tambah');
     // }else{

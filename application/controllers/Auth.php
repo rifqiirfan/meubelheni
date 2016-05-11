@@ -47,6 +47,10 @@ class Auth extends CI_Controller {
 	// log the user in
 	function login()
 	{
+		if($this->ion_auth->logged_in()){
+			redirect('dashboard');
+		}
+
 		$this->data['title'] = $this->lang->line('login_heading');
 
 		//validate form input

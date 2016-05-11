@@ -37,7 +37,7 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Halaman Depan</a></li>
+          <li class="active"><a href="<?=base_url();?>">Halaman Depan</a></li>
           <li><a href="#">Tambah Stok Barang</a></li>
           <li><a href="#">Lihat Stok Barang</a></li>
           <li><a href="#">Rekap Barang Masuk</a></li>
@@ -55,12 +55,13 @@
         <a href="#"><img src="<?=base_url();?>assets/img/mebelheny.png" height="60px"></a>
       </div>
       <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Halaman Depan</a></li>
+        <li class="active"><a href="<?= site_url('dashboard') ?>">Dashboard</a></li>
         <li><a href="<?= site_url('barang/tambah') ?>">Tambah Stok Barang</a></li>
         <li><a href="<?= site_url('barang') ?>">Lihat Stok Barang</a></li>
         <li><a href="#section4">Rekap Barang Masuk</a></li>
         <li><a href="#section5">Rekap Barang Keluar</a></li>
         <li><a href="#">Rekap Laba</a></li>
+        <li><a href="<?= site_url('auth/logout') ?>"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
       </ul><br>
     </div>
     <br>
@@ -75,57 +76,47 @@
           <div class="well">
            <div class="row">
             <h3 class="text">Lihat Stok Barang</h3>
-            <a href="#" class="btn btn-primary" role="button" class="text-right">Masuk</a>
-          </div><br>
-          <table class="table table-hover table-striped">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Product</th>
-                <th>Payment Taken</th>
-                <th>Status</th>
+            <a href="<?=base_url();?>/barang" class="btn btn-primary" role="button" class="text-right"><span class="glyphicon glyphicon-folder-open"></span> Masuk</a>
+
+          <div class="col-md-12">
+            <?php if( !empty($barang) ) { ?>
+            <table class= "table table-hover table-responsive">
+              <thead>
+               <tr>
+                <td><strong>Nama Barang</strong></td>
+                <td><strong>Jenis</strong></td>
+                <td><strong>Tanggal Masuk</strong></td>
+                <td><strong>Harga</strong></td>
+                <td><strong>Jumlah</strong></td>
+                <td><strong>Keterangan</strong></td>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>TB - Monthly</td>
-                <td>01/04/2012</td>
-                <td>Default</td>
-              </tr>
-              <tr class="active">
-                <td>2</td>
-                <td>TB - Monthly</td>
-                <td>01/04/2012</td>
-                <td>Approved</td>
-              </tr>
-              <tr class="success">
-                <td>3</td>
-                <td>TB - Monthly</td>
-                <td>02/04/2012</td>
-                <td>Declined</td>
-              </tr>
-              <tr class="warning">
-                <td>4</td>
-                <td>TB - Monthly</td>
-                <td>04/04/2012</td>
-                <td>Pending</td>
-              </tr>
-              <tr class="danger">
-                <td>5</td>
-                <td>TB - Monthly</td>
-                <td>05/04/2012</td>
-                <td>Call in</td>
-              </tr>
-            </tbody>
+
+            <?php foreach($barang as $b):?>
+             <tr>
+               <td><?php echo $b->nama_barang;?></td>
+               <td><?php echo $b->jenis_barang;?></td>
+               <td><?php echo $b->tgl_masuk;?></td>
+               <td><?php echo $b->harga;?></td>
+               <td><?php echo $b->jumlah;?></td>
+               <td><?php echo $b->keterangan;?></td>
+             </tr>
+           <?php endforeach;
+         }else{
+          echo "Empty";
+        }
+        ?>
+
           </table>
         </div>
+        </div>
+      </div>
       </div>
       <div class="col-sm-6">
         <div class="well">
           <div class="row">
             <h3 class="text">Tambah Stok Barang</h3>
-            <a href="#" class="btn btn-primary" role="button" class="text-right">Masuk</a>
+            <a href="<?=base_url();?>/barang" class="btn btn-primary" role="button" class="text-right"><span class="glyphicon glyphicon-folder-open"></span> Masuk</a>
           </div><br>
           <form role="form">
             <div class="form-group">
