@@ -52,12 +52,12 @@
     <div class="row content">
       <div class="col-sm-3 sidenav hidden-xs">
        <div class="logo">
-        <a href="#"><img src="img/mebelheny.png" height="60px"></a>
+        <a href="#"><img src="<?=base_url();?>assets/img/mebelheny.png" height="60px"></a>
       </div>
       <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="#section1">Halaman Depan</a></li>
-        <li><a href="tambahbarang.php">Tambah Stok Barang</a></li>
-        <li><a href="#section3">Lihat Stok Barang</a></li>
+        <li><a href="<?= site_url('barang/tambah') ?>">Tambah Stok Barang</a></li>
+        <li><a href="<?= site_url('barang') ?>">Lihat Stok Barang</a></li>
         <li><a href="#section4">Rekap Barang Masuk</a></li>
         <li><a href="#section5">Rekap Barang Keluar</a></li>
         <li><a href="#">Rekap Laba</a></li>
