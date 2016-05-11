@@ -12,7 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       }else if($this->ion_auth->in_group('members')){
       	$this->load->view('admin/dashboard_view');
       }else{
-      	redirect('/', 'refresh');
+      	return show_error('You must log in to view this page.');
       }
     }
 
