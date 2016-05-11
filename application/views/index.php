@@ -25,7 +25,7 @@
 			<nav><ul>
 				<li class="current_page"><a href="home">Halaman Depan</a></li>
 				<li><a href="#">Tentang Kami</a></li>
-				<li><a href="<?= site_url('login') ?>">Login</a></li>	
+				<li><a href="<?= site_url('auth/login') ?>">Login</a></li>	
 			</ul></nav>
 		</div>
 		<div id="body">
