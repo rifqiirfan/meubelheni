@@ -67,9 +67,9 @@ class Auth extends CI_Controller {
 				// redirect('admin/dashboard_view', 'refresh');
 				if($this->ion_auth->is_admin()){
 					// $this->load->view('superadmin/dashboard_view');
-					redirect('superadmin/dashboard_view');
+					redirect('superadmin');
 				}else if($this->ion_auth->in_group('members')){
-					$this->load->view('admin/dashboard_view');
+					redirect('admin');
 				}else{
 					redirect('/', 'refresh');
 				}
