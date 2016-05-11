@@ -92,8 +92,8 @@
           }
           ?>
 
-        </table-->
-      </div>
+            </table>
+          </div>
 
     </div>
   </div>
