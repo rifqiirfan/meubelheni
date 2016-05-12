@@ -22,20 +22,30 @@
 			<a href="home"><img src="<?=base_url();?>assets/img/mebelheny.png" height="60px"></a>
 		</div>
 		<div id="menu">
+			<!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 			<nav><ul>
 				<li class="current_page"><a href="home">Halaman Depan</a></li>
 				<li><a href="#">Tentang Kami</a></li>
 				<li><a href="login">Login</a></li>	
 			</ul></nav>
+            </div>
 		</div>
-		<div id="body">
+	</div>
+		<div class="container">
 			<div class="owl-carousel">
 				<div><img src="<?=base_url();?>assets/img/slide1.jpg" width="100%"></div>
 				<div><img src="<?=base_url();?>assets/img/slide2.jpg" width="100%"></div>
 				<div><img src="<?=base_url();?>assets/img/slide3.jpg" width="100%"></div>
 			</div>
 			<div class="content">
-				<div id="sidebar">
+				<div id="sidebar" class="col-md-3">
 					<h1>KATEGORI</h1>
 					<ul id="kategori">
 						<li><a href="#meja">Meja</a></li>
@@ -46,61 +56,59 @@
 						<li><a href="#loker">Loker</a></li>
 					</ul>
 				</div>
-				<div id="barang">
-					
+			
+				<div class="products">
+					<h5 class="latest-product">LATEST PRODUCTS</h5>	
+					<a class="view-all" href="product.html">VIEW ALL<span> </span></a> 		     
 				</div>
-			</div>
-			<div class="products">
-				<h5 class="latest-product">LATEST PRODUCTS</h5>	
-				<a class="view-all" href="product.html">VIEW ALL<span> </span></a> 		     
-			</div>
-			<div class="product-left">
-				<div class="col-md-4 chain-grid">
-					<a href="single.html"><img class="img-responsive chain" src="<?=base_url();?>assets/img/sofa.jpg" alt=" " /></a>
-					<span class="star"> </span>
-					<div class="grid-chain-bottom">
-						<h6><a href="single.html">Sofa Kulit Domba Garut</a></h6>
-						<div class="star-price">
-							<div class="dolor-grid"> 
-								<span class="actual">300$</span>
-								<span class="reducedfrom">400$</span>
+				<div class="product-left col-md-9">
+					<div class="col-md-4 chain-grid">
+						<a href="single.html"><img class="img-responsive chain" src="<?=base_url();?>assets/img/sofa.jpg" alt=" " /></a>
+						<span class="star"> </span>
+						<div class="grid-chain-bottom">
+							<h6><a href="single.html">Sofa Kulit Domba Garut</a></h6>
+							<div class="star-price">
+								<div class="dolor-grid"> 
+									<span class="actual">300$</span>
+									<span class="reducedfrom">400$</span>
+								</div>
+								<a class="now-get get-cart" href="#">ADD TO CART</a> 
+								<div class="clearfix"> </div>
 							</div>
-							<a class="now-get get-cart" href="#">ADD TO CART</a> 
-							<div class="clearfix"> </div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-4 chain-grid">
-					<a href="single.html"><img class="img-responsive chain" src="<?=base_url();?>assets/img/lemari 3.jpg" alt=" " /></a>
-					<span class="star"> </span>
-					<div class="grid-chain-bottom">
-						<h6><a href="single.html"></a>Lemari Kayu Meranti Asli Kalimantan</h6>
-						<div class="star-price">
-							<div class="dolor-grid"> 
-								<span class="actual">300$</span>
-								<span class="reducedfrom">400$</span>
+					<div class="col-md-4 chain-grid">
+						<a href="single.html"><img class="img-responsive chain" src="<?=base_url();?>assets/img/lemari 3.jpg" alt=" " /></a>
+						<span class="star"> </span>
+						<div class="grid-chain-bottom">
+							<h6><a href="single.html"></a>Lemari Kayu Meranti Asli Kalimantan</h6>
+							<div class="star-price">
+								<div class="dolor-grid"> 
+									<span class="actual">300$</span>
+									<span class="reducedfrom">400$</span>
+								</div>
+								<a class="now-get get-cart" href="#">ADD TO CART</a> 
+								<div class="clearfix"> </div>
 							</div>
-							<a class="now-get get-cart" href="#">ADD TO CART</a> 
-							<div class="clearfix"> </div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-4 chain-grid grid-top-chain">
-					<a href="single.html"><img class="img-responsive chain" src="<?=base_url();?>assets/img/kasur 2.jpg" alt=" " /></a>
-					<span class="star"> </span>
-					<div class="grid-chain-bottom">
-						<h6><a href="single.html">Kasur Tidur Putri Salju</a></h6>
-						<div class="star-price">
-							<div class="dolor-grid"> 
-								<span class="actual">300$</span>
-								<span class="reducedfrom">400$</span>
+					<div class="col-md-4 chain-grid grid-top-chain">
+						<a href="single.html"><img class="img-responsive chain" src="<?=base_url();?>assets/img/kasur 2.jpg" alt=" " /></a>
+						<span class="star"> </span>
+						<div class="grid-chain-bottom">
+							<h6><a href="single.html">Kasur Tidur Putri Salju</a></h6>
+							<div class="star-price">
+								<div class="dolor-grid"> 
+									<span class="actual">300$</span>
+									<span class="reducedfrom">400$</span>
+								</div>
+								<a class="now-get get-cart" href="#">ADD TO CART</a> 
+								<div class="clearfix"> </div>
 							</div>
-							<a class="now-get get-cart" href="#">ADD TO CART</a> 
-							<div class="clearfix"> </div>
 						</div>
 					</div>
+					<div class="clearfix"> </div>
 				</div>
-				<div class="clearfix"> </div>
 			</div>
 		</div>
 		<div class="footer">
