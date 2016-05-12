@@ -6,14 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="<?=base_url();?>assets/js/jquery.min.js"></script>
 	<link rel="shortcut icon" href="<?=base_url();?>assets/img/mebelheny.ico"-->
-	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/bootstrap.min.css" >
-	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/style.css" >
+	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/owl.carousel.css"/>
 	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/owl.theme.css"/>
 	<script src="<?=base_url();?>assets/js/style.js"></script>
 	<script src="<?=base_url();?>assets/js/bootstrap.min.js"></script>
 	<script src="<?=base_url();?>assets/js/owl.carousel.js"></script>
-
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
