@@ -27,7 +27,7 @@
           <div class="form-group">
             <label for="nama" class="col-md-3 control-label">Nama barang</label>
               <div class="col-md-6">
-                <input id="nama_barang" type="text" class="validate" name="nama_barang" value="<?php echo set_value('nama_barang'); ?>">
+                <input id="nama_barang" type="text" class="validate" name="nama_barang" value="<?php echo set_value($barang['nama_barang']); ?>>
               </div>
           </div>
 
@@ -66,7 +66,7 @@
           </div>
         </div>
       </form>
-      
+
     </div>
   </div>
 </body>

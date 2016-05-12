@@ -53,5 +53,6 @@ $route['default_controller'] = 'Home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['login'] = 'auth/login';
+$route['barang/:num/update'] = 'barang/update_barang';
 // $route['admin'] = 'auth/login';
 // $route['admin/dashboard_view'] = ''

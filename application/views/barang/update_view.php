@@ -34,7 +34,9 @@
            <td><?php echo $b->harga;?></td>
            <td><?php echo $b->jumlah;?></td>
            <td><?php echo $b->keterangan;?></td>
-           <td><a href="#" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-plus"></span> Update</a></td>
+           <td><a href="<?php echo base_url();?>barang/<?php echo $b->id_barang?>/update" class="btn btn-info btn-sm">
+             <span class="glyphicon glyphicon-plus"></span> Update</a>
+           </td>
          </tr>
        <?php endforeach;
      }else{
