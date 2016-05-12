@@ -10,19 +10,14 @@
   <div class="container">
     <div class="well well-lg">
       <div class="row">
-        <h3 class="text">Update Barang Masuk</h3>
+        <h3 class="text">Catat Penjualan</h3>
       </div>
 
-      <div class="well well-lg">
-        <h2>Pilih barang yang akan diupdate</h2>
-      </div>
+
             <?php if(isset($_SESSION)) {
-              // echo '<div class="alert alert-danger">';
               echo $this->session->flashdata('flash_data');
-              // echo "</div>";
             } ?>
-
-        <form class="form-horizontal" role="form" method="POST" action="<?= site_url('barang/update_barang') ?>">
+        <form class="form-horizontal" role="form" method="POST" action="<?= site_url('penjualan') ?>">
 
           <div class="form-group">
             <label for="nama" class="col-md-3 control-label">Nama barang</label>

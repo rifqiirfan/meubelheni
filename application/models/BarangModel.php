@@ -29,7 +29,6 @@
       $this->db->insert('Barang', $data);
       $last_id = $this->db->insert_id();
 
-
       $data = array(
         'id_barang' => $last_id,
         'tgl_masuk' => date('Y-m-d', strtotime($tgl_masuk)),
