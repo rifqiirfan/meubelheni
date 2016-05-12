@@ -14,13 +14,13 @@ body{
 }
 .header #logo{
 	margin: 0px;
-	padding: 10px 30px;
+	padding: 10px 60px;
 }
 /*Navbar*/
 #menu{
 	position: absolute;
 	top: 30px;
-	right: 30px;
+	right: 60px;
 }
 #menu a:hover{
 	background-color : #FF9947;
@@ -95,11 +95,10 @@ body{
 	padding-bottom: 30px;
 }
 #login{
-	width:400px;
-	margin:0 auto;
-	transition:opacity 1s;
-	-webkit-transition:opacity 1s;
-}
+	padding-top : 50px;
+  	width:400px;
+  	margin:0 auto;
+  	transition:opacity 1s;
 #login h1{
 	background-color: rgba(37,130,197,1.0);;
 	padding:20px 0;

@@ -40,7 +40,7 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="<?=site_url('superadmin');?>">Halaman Depan</a></li>
+          <li class="active"><a href="<?=base_url('dashboard');?>">Halaman Depan</a></li>
           <li><a href="<?= site_url('barang/tambah') ?>">Tambah Stok Barang</a></li>
           <li><a href="<?= site_url('barang') ?>">Lihat Stok Barang</a></li>
           <li><a href="<?= site_url('penjualan/masuk') ?>">Rekap Barang Masuk</a></li>
@@ -58,7 +58,7 @@
         <a href="#"><img src="<?=base_url();?>assets/img/mebelheny.png" height="80px" style="padding:10px"></a>
       </div>
       <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="<?=base_url();?>">Halaman Depan</a></li>
+        <li class="active"><a href="<?=base_url('dashboard');?>">Halaman Depan</a></li>
           <li><a href="<?= site_url('barang/tambah') ?>">Tambah Stok Barang</a></li>
           <li><a href="<?= site_url('barang') ?>">Lihat Stok Barang</a></li>
           <li><a href="<?= site_url('penjualan/masuk') ?>">Rekap Barang Masuk</a></li>
@@ -121,31 +121,37 @@
             <h3 class="text">Rekap Barang Keluar</h3>
             <a href="<?=base_url();?>/barang/keluar" class="btn btn-primary" role="button" class="text-right"><span class="glyphicon glyphicon-folder-open"></span> Masuk</a>
           </div><br>
-          <form role="form">
-            <div class="form-group">
-              <label for="exampleInputEmail1">
-                Email address
-              </label>
-              <input type="email" class="form-control" id="exampleInputEmail1" />
-            </div>
-            <div class="form-group">
+          <div class="col-md-12">
+            <?php if( !empty($barangmasuk) ) { ?>
+            <table class= "table table-hover table-responsive">
+              <thead>
+               <tr>
+                <td><strong>Nama Barang</strong></td>
+                <td><strong>Jenis</strong></td>
+                <td><strong>Tanggal Masuk</strong></td>
+                <td><strong>Harga</strong></td>
+                <td><strong>Jumlah</strong></td>
+                <td><strong>Keterangan</strong></td>
+              </tr>
+            </thead>
 
-              <label for="exampleInputPassword1">
-                Password
-              </label>
-              <input type="password" class="form-control" id="exampleInputPassword1" />
-            </div>
-            <div class="form-group">
+            <?php foreach($barangmasuk as $b):?>
+             <tr>
+               <td><?php echo $b->nama_barang;?></td>
+               <td><?php echo $b->jenis_barang;?></td>
+               <td><?php echo $b->tgl_masuk;?></td>
+               <td><?php echo $b->harga;?></td>
+               <td><?php echo $b->jumlah;?></td>
+               <td><?php echo $b->keterangan;?></td>
+             </tr>
+           <?php endforeach;
+         }else{
+          echo "Empty";
+        }
+        ?>
 
-              <label for="exampleInputFile">
-                File input
-              </label>
-              <input type="file" id="exampleInputFile" />
-            </div>
-            <button type="submit" class="btn btn-default">
-              Submit
-            </button>
-          </form>
+          </table>
+        </div>
         </div>
       </div>
     </div>

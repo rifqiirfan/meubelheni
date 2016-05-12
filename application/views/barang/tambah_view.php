@@ -80,7 +80,7 @@
 								<div class="caption">
 									<h3>Tambah Barang Baru</h3>
 									<p>...</p>
-									<p><a class="btn btn-primary" href="tambah_barang">Tambah Stok Barang</a>
+									<p><a class="btn btn-lg btn-block btn-primary" href="tambah_barang">Tambah Stok Barang</a>
 
 									</div>
 								</div>
@@ -91,7 +91,7 @@
 									<div class="caption">
 										<h3>Update Barang Lama</h3>
 										<p>...</p>
-										<p><a class="btn btn-primary" href="update_barang">Tambah Stok Barang</a>
+										<p><a class="btn btn-lg btn-block btn-primary" href="update_barang">Update Barang Lama</a>
 
 										</div>
 									</div>
