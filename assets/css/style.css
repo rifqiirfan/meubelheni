@@ -52,7 +52,6 @@ body{
 /*Sideabar*/
 #sidebar{
 	background-color: #9F9F9F;
-	width: 25%;
 	padding: 18px;
 	margin: 0 0;
 	
@@ -84,10 +83,17 @@ body{
 	color:#FFFFFF;
 }
 /*Konten bawah slide show*/
-#barang{
+#product{
 
 }
 /*Form khusus Halaman Login*/
+.product-list{
+	
+}
+.product-list img{
+	width : 250px;
+	height : 250px;
+}
 .content{
 	width: 100%;
 	margin: 0 auto;
