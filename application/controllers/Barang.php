@@ -23,12 +23,6 @@ class Barang extends CI_Controller{
     }else{
         return show_error('You have no authorization to view this page.');
     }
-
-    // if($this->ion_auth->is_admin()){
-    //   redirect('superadmin/barang/tambah');
-    // }else{
-    //
-    // }
   }
 
   function tambah_barang(){
@@ -52,11 +46,22 @@ class Barang extends CI_Controller{
     }
   }
 
+  function update(){
+    if($this->ion_auth->is_admin()){
+        $this->load->model('BarangModel');
+        $this->data['barang'] = $this->BarangModel->getBarang();
+        $this->load->view('barang\update_view', $this->data);
+    }else{
+        return show_error('You have no authorization to view this page.');
+    }
+  }
+
   function update_barang(){
     $this->load->view('barang\update_barang_view');
   }
 
   function update_process(){
+
 
   }
 
