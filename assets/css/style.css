@@ -14,13 +14,13 @@ body{
 }
 .header #logo{
 	margin: 0px;
-	padding: 10px 30px;
+	padding: 10px 60px;
 }
 /*Navbar*/
 #menu{
 	position: absolute;
 	top: 30px;
-	right: 30px;
+	right: 60px;
 }
 #menu a:hover{
 	background-color : #FF9947;
