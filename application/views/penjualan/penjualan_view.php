@@ -5,50 +5,49 @@
   <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/css/style.css">
 </head>
 <body>
-<div class="row">
-  <div class="col-sm-12">
-    <div class="well">
-      <div class="row">
-        <h2 class="text">Tambah Stok Barang</h2>
-      </div><br>
+  <div class="container">
+    <div class="well well-lg">
+      <div class="well well-sm">
+        <h2 class="text">Daftar Penjualan Barang</h2>
+      </div>
 
-      <div class="col-md-12">
-        <?php if( !empty($barang) ) { ?>
+        <?php if( !empty($barang_keluar) ) { ?>
         <table class= "table table-hover table-responsive">
           <thead>
            <tr>
             <td><strong>Nama Barang</strong></td>
             <td><strong>Jenis</strong></td>
-            <td><strong>Tanggal Masuk</strong></td>
+            <td><strong>Tanggal Keluar</strong></td>
             <td><strong>Harga</strong></td>
-            <td><strong>Jumlah</strong></td>
+            <?php if($this->ion_auth->is_admin()){?>
+              <td><strong>Laba</strong></td>
+            <?php
+            } ?>
+
             <td><strong>Keterangan</strong></td>
           </tr>
         </thead>
 
-        <?php foreach($barang as $b):?>
+        <?php foreach($barang_keluar as $bk):?>
          <tr>
-           <td><?php echo $b->nama_barang;?></td>
-           <td><?php echo $b->jenis_barang;?></td>
-           <td><?php echo $b->tgl_masuk;?></td>
-           <td><?php echo $b->harga;?></td>
-           <td><?php echo $b->jumlah;?></td>
-           <td><?php echo $b->keterangan;?></td>
+           <td><?php echo $bk->nama_barang;?></td>
+           <td><?php echo $bk->jenis_barang;?></td>
+           <td><?php echo $bk->tgl_keluar;?></td>
+           <td><?php echo $bk->harga;?></td>
+           <?php if($this->ion_auth->is_admin()){?>
+           <td><?php echo $bk->laba;?></td>
+           <?php } ?>
+           <td><?php echo $bk->keterangan;?></td>
          </tr>
        <?php endforeach;
-     }else{
-      echo "Empty";
+     }else{?>
+       <div class="alert alert-warning"> Data kosong! </div>
+    <?php
     }
     ?>
-
       </table>
     </div>
+  </div>
 
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </body>
 </html>
