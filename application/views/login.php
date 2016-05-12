@@ -10,7 +10,7 @@
 <body>
     <div class="header" id="container">
         <div id="logo">
-            <a href="home"><img src="<?=base_url();?>assets/img/mebelheny.png" height="60px"></a>
+            <a href="../home"><img src="<?=base_url();?>assets/img/mebelheny.png" height="60px"></a>
         </div>
         <div id="menu">
             <nav><ul>
