@@ -49,7 +49,7 @@
     <div class="row content">
       <div class="col-sm-3 sidenav hidden-xs">
        <div class="logo">
-        <a href="#"><img src="img/mebelheny.png" height="60px"></a>
+        <a href="#"><img src="<?=base_url();?>assets/img/mebelheny.png" height="60px"></a>
       </div>
         <ul class="nav nav-pills nav-stacked">
           <li class="active"><a href="#">Halaman Depan</a></li>
