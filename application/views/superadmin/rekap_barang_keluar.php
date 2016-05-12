@@ -5,11 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/superadmin_style.css">
-  <link rel='stylesheet' type='text/css'href='http://fonts.googleapis.com/css?family=Roboto:400,700' >
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link rel="shortcut icon" href="<?=base_url();?>assets/img/mebelheny.ico"-->
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 550px}
@@ -40,13 +37,13 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="<?=site_url('superadmin');?>">Halaman Depan</a></li>
+          <li><a href="<?=base_url();?>">Halaman Depan</a></li>
           <li><a href="<?= site_url('barang/tambah') ?>">Tambah Stok Barang</a></li>
-          <li><a href="<?= site_url('barang') ?>">Lihat Stok Barang</a></li>
+          <li class="active"><a href="<?= site_url('barang') ?>">Lihat Stok Barang</a></li>
           <li><a href="<?= site_url('penjualan/masuk') ?>">Rekap Barang Masuk</a></li>
           <li><a href="<?= site_url('penjualan/keluar') ?>">Rekap Barang Keluar</a></li>
           <li><a href="<?= site_url('penjualan/catat') ?>">Rekap Laba</a></li>
-        </ul>
+        <li><a href="<?= site_url('auth/logout') ?>"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
       </div>
     </div>
   </nav>
@@ -55,13 +52,13 @@
     <div class="row content">
       <div class="col-sm-3 sidenav hidden-xs">
        <div class="logo">
-        <a href="#"><img src="<?=base_url();?>assets/img/mebelheny.png" height="80px" style="padding:10px"></a>
+        <a href="#"><img src="<?=base_url();?>assets/img/mebelheny.png" height="60px"></a>
       </div>
       <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="<?=base_url();?>">Halaman Depan</a></li>
+        <li><a href="<?=base_url();?>">Halaman Depan</a></li>
           <li><a href="<?= site_url('barang/tambah') ?>">Tambah Stok Barang</a></li>
           <li><a href="<?= site_url('barang') ?>">Lihat Stok Barang</a></li>
-          <li><a href="<?= site_url('penjualan/masuk') ?>">Rekap Barang Masuk</a></li>
+          <li class="active"><a href="<?= site_url('penjualan/masuk') ?>">Rekap Barang Masuk</a></li>
           <li><a href="<?= site_url('penjualan/keluar') ?>">Rekap Barang Keluar</a></li>
           <li><a href="<?= site_url('penjualan/catat') ?>">Rekap Laba</a></li>
         <li><a href="<?= site_url('auth/logout') ?>"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
@@ -70,15 +67,11 @@
     <br>
 
     <div class="col-sm-9">
-      <div class="well">
-        <h4>Selamat datang, Super Admin!</h4>
-        <p>Hari ini Jumat, 29 April 2016</p>
-      </div>
-      <div class="row">
+        <div class="row">
         <div class="col-sm-6">
           <div class="well">
            <div class="row">
-            <h3 class="text">Rekap Barang Masuk</h3>
+            <h3 class="text">Rekap Barang Keluar</h3>
             <a href="<?=base_url();?>/barang/masuk" class="btn btn-primary" role="button" class="text-right"><span class="glyphicon glyphicon-folder-open"></span> Masuk</a>
 
           <div class="col-md-12">
@@ -112,40 +105,6 @@
 
           </table>
         </div>
-        </div>
-      </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="well">
-          <div class="row">
-            <h3 class="text">Rekap Barang Keluar</h3>
-            <a href="<?=base_url();?>/barang/keluar" class="btn btn-primary" role="button" class="text-right"><span class="glyphicon glyphicon-folder-open"></span> Masuk</a>
-          </div><br>
-          <form role="form">
-            <div class="form-group">
-              <label for="exampleInputEmail1">
-                Email address
-              </label>
-              <input type="email" class="form-control" id="exampleInputEmail1" />
-            </div>
-            <div class="form-group">
-
-              <label for="exampleInputPassword1">
-                Password
-              </label>
-              <input type="password" class="form-control" id="exampleInputPassword1" />
-            </div>
-            <div class="form-group">
-
-              <label for="exampleInputFile">
-                File input
-              </label>
-              <input type="file" id="exampleInputFile" />
-            </div>
-            <button type="submit" class="btn btn-default">
-              Submit
-            </button>
-          </form>
         </div>
       </div>
     </div>

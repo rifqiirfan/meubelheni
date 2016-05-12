@@ -49,13 +49,14 @@
     <div class="row content">
       <div class="col-sm-3 sidenav hidden-xs">
        <div class="logo">
-        <a href="#"><img src="img/mebelheny.png" height="60px"></a>
+        <a href="#"><img src="<?=base_url();?>assets/img/mebelheny.png" height="80px" style="padding:10px"></a>
       </div>
         <ul class="nav nav-pills nav-stacked">
           <li class="active"><a href="#">Halaman Depan</a></li>
           <li><a href="#">Lihat Stok Barang</a></li>
           <li><a href="#">Penjualan</a></li>
           <li><a href="#">Rekap Barang Keluar</a></li>
+          <li><a href="<?= site_url('auth/logout') ?>"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
         </ul><br>
       </div>
       <br>
@@ -159,6 +160,5 @@
       </div>
     </div>
   </div>
-  <a href="<?= site_url('auth/logout') ?>">Logout</a>
 </body>
 </html>
