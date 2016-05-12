@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Super Admin | Mebel Heni</title>
+  <title>Rekap Barang Masuk - Super Admin | Mebel Heni</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -79,6 +79,7 @@
             <table class= "table table-hover table-responsive">
               <thead>
                <tr>
+                <td><strong>No.</strong></td>
                 <td><strong>Nama Barang</strong></td>
                 <td><strong>Jenis</strong></td>
                 <td><strong>Tanggal Masuk</strong></td>
@@ -90,6 +91,7 @@
 
             <?php foreach($barang as $b):?>
              <tr>
+             <td><strong>No.</strong></td>
                <td><?php echo $b->nama_barang;?></td>
                <td><?php echo $b->jenis_barang;?></td>
                <td><?php echo $b->tgl_masuk;?></td>

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="<?=base_url();?>assets/img/mebelheny.ico"-->
   <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/css/bootstrap.min.css" >
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/css/superadmin_style.css">
   <link rel="shortcut icon" href="<?=base_url();?>assets/img/mebelheny.ico"-->
   <script src="<?=base_url();?>assets/js/bootstrap.min.js"></script>
 </head>
@@ -38,7 +38,7 @@
     <div class="row content">
       <div class="col-sm-3 sidenav hidden-xs">
        <div class="logo">
-        <a href="#"><img src="<?=base_url();?>assets/img/mebelheny.png" height="60px"></a>
+        <a href="#"><img src="<?=base_url();?>assets/img/mebelheny.png" height="80px" style="padding:10px"></a>
       </div>
       <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="#section1">Halaman Depan</a></li>
@@ -92,8 +92,8 @@
           }
           ?>
 
-            </table>
-          </div>
+        </table>
+      </div>
 
     </div>
   </div>

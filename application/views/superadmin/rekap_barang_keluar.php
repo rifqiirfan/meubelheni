@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Super Admin | Mebel Heni</title>
+  <title>Rekap Barang Keluar - Super Admin | Mebel Heni</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -52,10 +52,10 @@
     <div class="row content">
       <div class="col-sm-3 sidenav hidden-xs">
        <div class="logo">
-        <a href="#"><img src="<?=base_url();?>assets/img/mebelheny.png" height="60px"></a>
+        <a href="#"><img src="<?=base_url();?>assets/img/mebelheny.png" height="80px" style="padding:10px"></a>
       </div>
       <ul class="nav nav-pills nav-stacked">
-        <li><a href="<?=base_url();?>">Halaman Depan</a></li>
+        <li><a href="<?=base_url('');?>">Halaman Depan</a></li>
           <li><a href="<?= site_url('barang/tambah') ?>">Tambah Stok Barang</a></li>
           <li><a href="<?= site_url('barang') ?>">Lihat Stok Barang</a></li>
           <li class="active"><a href="<?= site_url('penjualan/masuk') ?>">Rekap Barang Masuk</a></li>
