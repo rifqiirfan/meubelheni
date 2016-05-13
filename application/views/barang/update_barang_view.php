@@ -2,7 +2,7 @@
 <head>
   <link rel="shortcut icon" href="<?=base_url();?>assets/img/mebelheny.ico"-->
   <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/css/bootstrap.min.css" >
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/css/superadmin_style.css">
   <link rel="shortcut icon" href="<?=base_url();?>assets/img/mebelheny.ico"-->
   <script src="<?=base_url();?>assets/js/bootstrap.min.js"></script>
 </head>
