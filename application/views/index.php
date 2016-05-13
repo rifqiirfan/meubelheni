@@ -32,7 +32,7 @@
 					<li class="current_page"><a href="home">Halaman Depan</a></li>
 					<li><a href="#">Tentang Kami</a></li>
 					<?php if($this->ion_auth->logged_in()) {?>
-					<li><a href="<?= site_url('auth/logout') ?>">Logout</a></li>
+					<li><a href="<?= site_url('dashboard') ?>">Dashboard</a></li>
 					<?php }else{  ?>
 					<li><a href="<?= site_url('auth/login') ?>">Login</a>
 						<?php } ?>
@@ -59,8 +59,8 @@
 					</ul>
 				</div>
 				<div class="products">
-					<h5 class="latest-product">LATEST PRODUCTS</h5>	
-					<a class="view-all" href="product.html">VIEW ALL<span> </span></a> 		     
+					<h5 class="latest-product">LATEST PRODUCTS</h5>
+					<a class="view-all" href="product.html">VIEW ALL<span> </span></a>
 				</div>
 			</div>
 			<div class="products">
@@ -74,11 +74,11 @@
  						<div class="grid-chain-bottom">
  							<h6><a href="single.html">Sofa Kulit Domba Garut</a></h6>
  							<div class="star-price">
- 								<div class="dolor-grid"> 
+ 								<div class="dolor-grid">
  									<span class="actual">300$</span>
  									<span class="reducedfrom">400$</span>
  								</div>
- 								<a class="now-get get-cart" href="#">ADD TO CART</a> 
+ 								<a class="now-get get-cart" href="#">ADD TO CART</a>
  								<div class="clearfix"> </div>
  								<div class="col-md-4 chain-grid">
  						<a href="single.html"><img class="img-responsive chain" src="<?=base_url();?>assets/img/lemari 3.jpg" alt=" " /></a>
@@ -86,11 +86,11 @@
  						<div class="grid-chain-bottom">
  							<h6><a href="single.html"></a>Lemari Kayu Meranti Asli Kalimantan</h6>
  							<div class="star-price">
- 								<div class="dolor-grid"> 
+ 								<div class="dolor-grid">
  									<span class="actual">300$</span>
  									<span class="reducedfrom">400$</span>
  								</div>
- 								<a class="now-get get-cart" href="#">ADD TO CART</a> 
+ 								<a class="now-get get-cart" href="#">ADD TO CART</a>
  								<div class="clearfix"> </div>
  <div class="col-md-4 chain-grid grid-top-chain">
  						<a href="single.html"><img class="img-responsive chain" src="<?=base_url();?>assets/img/kasur 2.jpg" alt=" " /></a>
@@ -98,11 +98,11 @@
  						<div class="grid-chain-bottom">
  							<h6><a href="single.html">Kasur Tidur Putri Salju</a></h6>
  							<div class="star-price">
- 								<div class="dolor-grid"> 
+ 								<div class="dolor-grid">
  									<span class="actual">300$</span>
  									<span class="reducedfrom">400$</span>
  								</div>
- 								<a class="now-get get-cart" href="#">ADD TO CART</a> 
+ 								<a class="now-get get-cart" href="#">ADD TO CART</a>
  								<div class="clearfix"> </div>
   							</div>
   							<div class="clearfix"> </div>

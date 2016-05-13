@@ -11,6 +11,13 @@
       return $query;
     }
 
+    function getBarangOnly($id_barang){
+      var_dump($id_barang);
+      $query = $this->db->select('*')->from('barang')->where('id_barang', $id_barang)->get()->result();
+      var_dump($query);
+      return $query;
+    }
+
     function tambahBarang(){
 
       //fetch data from form
