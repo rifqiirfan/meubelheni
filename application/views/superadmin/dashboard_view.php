@@ -46,6 +46,7 @@
           <li><a href="<?= site_url('penjualan/masuk') ?>">Rekap Barang Masuk</a></li>
           <li><a href="<?= site_url('penjualan/keluar') ?>">Rekap Barang Keluar</a></li>
           <li><a href="<?= site_url('penjualan/catat') ?>">Rekap Laba</a></li>
+          <li><a href="<?= site_url('auth/logout') ?>"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
         </ul>
       </div>
     </div>
@@ -58,13 +59,13 @@
         <a href="#"><img src="<?=base_url();?>assets/img/mebelheny.png" height="80px" style="padding:10px"></a>
       </div>
       <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="<?=base_url('dashboard');?>">Halaman Depan</a></li>
+          <li class="active"><a href="<?=base_url('dashboard');?>">Halaman Depan</a></li>
           <li><a href="<?= site_url('barang/tambah') ?>">Tambah Stok Barang</a></li>
           <li><a href="<?= site_url('barang') ?>">Lihat Stok Barang</a></li>
           <li><a href="<?= site_url('penjualan/masuk') ?>">Rekap Barang Masuk</a></li>
           <li><a href="<?= site_url('penjualan/keluar') ?>">Rekap Barang Keluar</a></li>
           <li><a href="<?= site_url('penjualan/catat') ?>">Rekap Laba</a></li>
-        <li><a href="<?= site_url('auth/logout') ?>"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+          <li><a href="<?= site_url('auth/logout') ?>"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
       </ul><br>
     </div>
     <br>
@@ -79,7 +80,7 @@
           <div class="well">
            <div class="row">
             <h3 class="text">Rekap Barang Masuk</h3>
-            <a href="<?=base_url();?>/barang/masuk" class="btn btn-primary" role="button" class="text-right"><span class="glyphicon glyphicon-folder-open"></span> Masuk</a>
+            <a href="<?= site_url('barang/masuk') ?>" class="btn btn-primary" role="button" class="text-right"><span class="glyphicon glyphicon-folder-open"></span> Masuk</a>
 
           <div class="col-md-12">
             <?php if( !empty($barang) ) { ?>
@@ -119,7 +120,7 @@
         <div class="well">
           <div class="row">
             <h3 class="text">Rekap Barang Keluar</h3>
-            <a href="<?=base_url();?>/barang/keluar" class="btn btn-primary" role="button" class="text-right"><span class="glyphicon glyphicon-folder-open"></span> Masuk</a>
+            <a href="<?= site_url('barang/tkeluar') ?>" class="btn btn-primary" role="button" class="text-right"><span class="glyphicon glyphicon-folder-open"></span> Masuk</a>
           </div><br>
           <div class="col-md-12">
             <?php if( !empty($barangmasuk) ) { ?>
