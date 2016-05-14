@@ -91,7 +91,7 @@
 									<div class="caption">
 										<h3>Update Barang Lama</h3>
 										<p>...</p>
-										<p><a class="btn btn-lg btn-block btn-primary" href="update_barang">Update Barang Lama</a>
+										<p><a class="btn btn-lg btn-block btn-primary" href="update">Update Barang Lama</a>
 
 										</div>
 									</div>

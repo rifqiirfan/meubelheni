@@ -12,9 +12,7 @@
     }
 
     function getBarangOnly($id_barang){
-      var_dump($id_barang);
-      $query = $this->db->select('*')->from('barang')->where('id_barang', $id_barang)->get()->result();
-      var_dump($query);
+      $query = $this->db->select('*')->from('barang b')->join('barang_keluar bk', 'b.id_barang = bk.id_barang')->where('b.id_barang', $id_barang)->get()->result();
       return $query;
     }
 
