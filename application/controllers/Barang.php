@@ -57,12 +57,11 @@ class Barang extends CI_Controller{
   }
 
   function update_barang($id_barang){
-    // $this->data['id'] = $this->uri->segment(3);
-    // var_dump($this->data);
+
     $this->load->model('BarangModel');
-    $this->data['barang'] = $this->BarangModel->getBarangOnly($this->uri->segment(2));
-    // $this->data['barang'] = $this->BarangModel->getBarangOnly($id_barang);
-    
+    $this->data['barang'] = $this->BarangModel->getBarangOnly($this->uri->segment(3));
+    $this->data['barang'] = $this->BarangModel->getBarangOnly($id_barang);
+
     $this->load->view('barang\update_barang_view',$this->data);
   }
 
