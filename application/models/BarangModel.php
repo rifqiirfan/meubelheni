@@ -16,6 +16,18 @@
       return $query;
     }
 
+    function getBarangMasuk(){
+      $query = $this->db->select('*')->from('barang b')->join('barang_masuk bm', 'b.id_barang = bm.id_barang')->limit('5')->get()->result();
+
+      return $query;
+    }
+
+    function getBarangKeluar(){
+      $query = $this->db->select('*')->from('barang b')->join('barang_keluar bk', 'b.id_barang = bk.id_barang')->limit('5')->get()->result();
+      return $query;
+
+    }
+
     function tambahBarang(){
 
       //fetch data from form
