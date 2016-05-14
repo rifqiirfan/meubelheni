@@ -80,7 +80,7 @@
           <div class="well">
            <div class="row">
             <h3 class="text">Rekap Barang Masuk</h3>
-            <a href="<?= site_url('barang/masuk') ?>" class="btn btn-primary" role="button" class="text-right"><span class="glyphicon glyphicon-folder-open"></span> Masuk</a>
+            <a href="<?= site_url('barang') ?>" class="btn btn-primary" role="button" class="text-right"><span class="glyphicon glyphicon-folder-open"></span> Masuk</a>
 
             <div class="col-md-12">
               <?php if( !empty($barang) ) { ?>
@@ -120,7 +120,7 @@
   <div class="well">
     <div class="row">
       <h3 class="text">Rekap Barang Keluar</h3>
-      <a href="<?= site_url('barang/tkeluar') ?>" class="btn btn-primary" role="button" class="text-right"><span class="glyphicon glyphicon-folder-open"></span> Masuk</a>
+      <a href="<?= site_url('penjualan') ?>" class="btn btn-primary" role="button" class="text-right"><span class="glyphicon glyphicon-folder-open"></span> Masuk</a>
     </div><br>
     <div class="col-md-12">
       <?php if( !empty($barangmasuk) ) { ?>

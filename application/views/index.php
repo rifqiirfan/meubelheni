@@ -86,7 +86,7 @@
  								</div>
  								<a class="now-get get-cart" href="#">ADD TO CART</a>
  								<div class="clearfix"> </div>
- <div class="col-md-4 chain-grid grid-top-chain">
+ 						<div class="col-md-4 chain-grid grid-top-chain">
  						<a href="single.html"><img class="img-responsive chain" src="<?=base_url();?>assets/img/kasur 2.jpg" alt=" " /></a>
  						<span class="star"> </span>
  						<div class="grid-chain-bottom">
@@ -142,4 +142,4 @@
 		</div>
 		</div>
 	</body>
-	</html>
+</html>
