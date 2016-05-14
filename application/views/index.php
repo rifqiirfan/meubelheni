@@ -22,12 +22,6 @@
 		</div>
 		<div id="menu">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
 				<nav><ul>
 					<li class="current_page"><a href="home">Halaman Depan</a></li>
 					<li><a href="#">Tentang Kami</a></li>
@@ -92,7 +86,7 @@
  								</div>
  								<a class="now-get get-cart" href="#">ADD TO CART</a>
  								<div class="clearfix"> </div>
- <div class="col-md-4 chain-grid grid-top-chain">
+ 						<div class="col-md-4 chain-grid grid-top-chain">
  						<a href="single.html"><img class="img-responsive chain" src="<?=base_url();?>assets/img/kasur 2.jpg" alt=" " /></a>
  						<span class="star"> </span>
  						<div class="grid-chain-bottom">
@@ -148,4 +142,4 @@
 		</div>
 		</div>
 	</body>
-	</html>
+</html>
