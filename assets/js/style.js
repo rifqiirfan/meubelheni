@@ -9,3 +9,7 @@ $(document).ready(function() {
     autoplayHoverPause:true
 })
 });
+
+$('.dropdown-toggle').dropdown(){
+	
+}

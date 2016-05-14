@@ -24,10 +24,10 @@
         <ul class="nav navbar-nav">
           <li><a href="<?= site_url('dashboard') ?>">Halaman Depan</a></li>
           <li><a href="<?= site_url('barang/tambah') ?>">Tambah Stok Barang</a></li>
-          <li class="active"><a href="<?= site_url('barang') ?>">Lihat Stok Barang</a></li>
+          <li><a href="<?= site_url('barang') ?>">Lihat Stok Barang</a></li>
           <li><a href="#">Rekap Barang Masuk</a></li>
           <li><a href="#">Rekap Barang Keluar</a></li>
-          <li><a href="#">Rekap Laba</a></li>
+          <li class="active"><a href="#">Rekap Laba</a></li>
           <li><a href="<?= site_url('auth/logout') ?>"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
         </ul>
       </div>
@@ -42,10 +42,10 @@
       <ul class="nav nav-pills nav-stacked">
         <li><a href="<?=base_url('dashboard');?>">Halaman Depan</a></li>
         <li><a href="<?= site_url('barang/tambah') ?>">Tambah Stok Barang</a></li>
-        <li class="active"><a href="<?= site_url('barang') ?>">Lihat Stok Barang</a></li>
+        <li><a href="<?= site_url('barang') ?>">Lihat Stok Barang</a></li>
         <li><a href="<?= site_url('penjualan/masuk') ?>">Rekap Barang Masuk</a></li>
         <li><a href="<?= site_url('penjualan/keluar') ?>">Rekap Barang Keluar</a></li>
-        <li><a href="<?= site_url('penjualan/catat') ?>">Rekap Laba</a></li>
+        <li class="active"><a href="<?= site_url('penjualan') ?>">Rekap Laba</a></li>
         <li><a href="<?= site_url('auth/logout') ?>"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
       </ul>
     </ul><br>
