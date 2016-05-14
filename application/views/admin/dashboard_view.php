@@ -43,7 +43,7 @@
           <li class="active"><a href="<?=base_url('dashboard');?>">Halaman Depan</a></li>
           <li><a href="<?= site_url('barang') ?>">Lihat Stok Barang</a></li>
           <li><a href="<?= site_url('penjualan/catat') ?>">Penjualan</a></li>
-          <li><a href="<?= site_url('penjualan/keluar') ?>">Rekap Barang Keluar</a></li>
+          <li><a href="<?= site_url('penjualan') ?>">Rekap Barang Keluar</a></li>
           <li><a href="<?= site_url('auth/logout') ?>"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
         </div>
       </div>
