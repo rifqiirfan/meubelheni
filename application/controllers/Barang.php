@@ -67,7 +67,21 @@ class Barang extends CI_Controller{
   }
 
   function update_process(){
+    $this->load->helper(array('form', 'url'));
+    $this->load->library('form_validation');
+    $this->form_validation->set_rules('tgl_masuk', 'harga', 'jumlah', 'required');
 
+   if ($this->form_validation->run() == FALSE){
+     $this->session->set_flashdata('flash_data', 'Harap isi form dengan lengkap dan benar.');
+    //  redirect('barang\update_barang');
+    redirect($this->session->flashdata('redirect'));
+
+   }else{
+     $this->load->model('BarangModel');
+     $this->BarangModel->updateBarang();
+     $this->load->view('barang');
+
+   }
 
   }
 
