@@ -11,7 +11,12 @@
       return $query;
     }
 
-    function getBarangOnly($id_barang){
+    function getBarangOnly(){
+      $query = $this->db->select('*')->from('barang')->get()->result();
+      return $query;
+    }
+
+    function getBarangTertentu($id_barang){
       // $query = $this->db->select('*')->from('barang b')->join('barang_keluar bk', 'b.id_barang = bk.id_barang')->where('b.id_barang', $id_barang)->get()->result();
       $query = $this->db->select('*')->from('barang')->where('id_barang', $id_barang)->get()->result();
 
@@ -69,7 +74,6 @@
 
 
       $data = array(
-        'id_masuk' => '',
         'id_barang' => $id_barang,
         'tgl_masuk' => date('Y-m-d', strtotime($tgl_masuk)),
         'harga' => $harga,

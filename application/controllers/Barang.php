@@ -49,7 +49,7 @@ class Barang extends CI_Controller{
   function update(){
     if($this->ion_auth->is_admin()){
         $this->load->model('BarangModel');
-        $this->data['barang'] = $this->BarangModel->getBarang();
+        $this->data['barang'] = $this->BarangModel->getBarangOnly();
 
         $this->load->view('barang\update_view', $this->data);
     }else{
@@ -60,7 +60,7 @@ class Barang extends CI_Controller{
   function update_barang(){
 
     $this->load->model('BarangModel');
-    $this->data['barang'] = $this->BarangModel->getBarangOnly($this->uri->segment(2));
+    $this->data['barang'] = $this->BarangModel->getBarangTertentu($this->uri->segment(2));
     // $this->data['barang'] = $this->BarangModel->getBarangOnly($id_barang);
 
     $this->load->view('barang\update_barang_view',$this->data);
@@ -79,7 +79,7 @@ class Barang extends CI_Controller{
    }else{
      $this->load->model('BarangModel');
      $this->BarangModel->updateBarang();
-     $this->load->view('barang');
+     redirect('barang');
 
    }
 

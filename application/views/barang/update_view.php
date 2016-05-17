@@ -18,10 +18,10 @@
            <tr>
             <td><strong>Nama Barang</strong></td>
             <td><strong>Jenis</strong></td>
-            <td><strong>Tanggal Masuk</strong></td>
+            <!-- <td><strong>Tanggal Masuk</strong></td>
             <td><strong>Harga</strong></td>
             <td><strong>Jumlah</strong></td>
-            <td><strong>Keterangan</strong></td>
+            <td><strong>Keterangan</strong></td> -->
             <td><strong>Update</strong></td>
           </tr>
         </thead>
@@ -30,10 +30,7 @@
          <tr>
            <td><?php echo $b->nama_barang;?></td>
            <td><?php echo $b->jenis_barang;?></td>
-           <td><?php echo $b->tgl_masuk;?></td>
-           <td><?php echo $b->harga;?></td>
-           <td><?php echo $b->jumlah;?></td>
-           <td><?php echo $b->keterangan;?></td>
+
            <td><a href="<?php echo base_url();?>barang/<?php echo $b->id_barang?>/update" class="btn btn-info btn-sm">
              <span class="glyphicon glyphicon-plus"></span> Update</a>
            </td>
