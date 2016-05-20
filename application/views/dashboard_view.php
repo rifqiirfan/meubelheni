@@ -125,7 +125,7 @@
   <div class="well">
     <div class="row">
       <h3 class="text">Rekap Penjualan</h3>
-      <a href="<?= site_url('barang/tkeluar') ?>" class="btn btn-primary" role="button" class="text-right"><span class="glyphicon glyphicon-folder-open"></span> Masuk</a>
+      <a href="<?= site_url('penjualan') ?>" class="btn btn-primary" role="button" class="text-right"><span class="glyphicon glyphicon-folder-open"></span> Masuk</a>
     </div><br>
     <div class="col-md-12">
       <?php if( !empty($barang_keluar) ) { ?>

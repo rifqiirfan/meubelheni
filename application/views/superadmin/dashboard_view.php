@@ -9,6 +9,11 @@
   <link rel='stylesheet' type='text/css'href='http://fonts.googleapis.com/css?family=Roboto:400,700' >
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#example').DataTable();
+    } );
+  </script>
   <link rel="shortcut icon" href="<?=base_url();?>assets/img/mebelheny.ico"-->
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
@@ -27,15 +32,9 @@
   </style>
 </head>
 <body>
-
   <nav class="navbar navbar-inverse visible-xs">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
         <a class="navbar-brand" href="#">Mebel Heni</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
@@ -63,8 +62,7 @@
         <li><a href="<?= site_url('barang/tambah') ?>">Tambah Stok Barang</a></li>
         <li><a href="<?= site_url('barang') ?>">Lihat Stok Barang</a></li>
         <li><a href="<?= site_url('penjualan/masuk') ?>">Rekap Barang Masuk</a></li>
-        <li><a href="<?= site_url('penjualan/keluar') ?>">Rekap Barang Keluar</a></li>
-        <li><a href="<?= site_url('penjualan/catat') ?>">Rekap Laba</a></li>
+        <li><a href="<?= site_url('penjualan') ?>">Rekap Barang Keluar</a></li>
         <li><a href="<?= site_url('auth/logout') ?>"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
       </ul><br>
     </div>
@@ -84,20 +82,20 @@
 
             <div class="col-md-12">
               <?php if( !empty($barang) ) { ?>
-              <table class= "table table-hover table-responsive">
-                <thead>
-                 <tr>
-                  <td><strong>Nama Barang</strong></td>
-                  <td><strong>Jenis</strong></td>
-                  <td><strong>Tanggal Masuk</strong></td>
-                  <td><strong>Harga</strong></td>
-                  <td><strong>Jumlah</strong></td>
-                  <td><strong>Keterangan</strong></td>
-                </tr>
-              </thead>
+                <table class= "table table-hover table-responsive">
+                  <thead>
+                   <tr>
+                    <td><strong>Nama Barang</strong></td>
+                    <td><strong>Jenis</strong></td>
+                    <td><strong>Tanggal Masuk</strong></td>
+                    <td><strong>Harga</strong></td>
+                    <td><strong>Jumlah</strong></td>
+                    <td><strong>Keterangan</strong></td>
+                  </tr>
+                </thead>
 
-              <?php foreach($barang as $b):?>
-               <tr>
+                <?php foreach($barang as $b):?>
+                <tr>
                  <td><?php echo $b->nama_barang;?></td>
                  <td><?php echo $b->jenis_barang;?></td>
                  <td><?php echo $b->tgl_masuk;?></td>
@@ -124,20 +122,20 @@
     </div><br>
     <div class="col-md-12">
       <?php if( !empty($barangmasuk) ) { ?>
-      <table class= "table table-hover table-responsive">
-        <thead>
-         <tr>
-          <td><strong>Nama Barang</strong></td>
-          <td><strong>Jenis</strong></td>
-          <td><strong>Tanggal Masuk</strong></td>
-          <td><strong>Harga</strong></td>
-          <td><strong>Jumlah</strong></td>
-          <td><strong>Keterangan</strong></td>
-        </tr>
-      </thead>
+        <table class= "table table-hover table-responsive">
+          <thead>
+           <tr>
+            <td><strong>Nama Barang</strong></td>
+            <td><strong>Jenis</strong></td>
+            <td><strong>Tanggal Masuk</strong></td>
+            <td><strong>Harga</strong></td>
+            <td><strong>Jumlah</strong></td>
+            <td><strong>Keterangan</strong></td>
+          </tr>
+        </thead>
 
-      <?php foreach($barangmasuk as $b):?>
-       <tr>
+        <?php foreach($barangmasuk as $b):?>
+        <tr>
          <td><?php echo $b->nama_barang;?></td>
          <td><?php echo $b->jenis_barang;?></td>
          <td><?php echo $b->tgl_masuk;?></td>

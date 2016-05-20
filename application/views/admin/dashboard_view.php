@@ -9,6 +9,11 @@
   <link rel='stylesheet' type='text/css'href='http://fonts.googleapis.com/css?family=Roboto:400,700' >
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#example').DataTable();
+    } );
+  </script>
   <link rel="shortcut icon" href="<?=base_url();?>assets/img/mebelheny.ico"-->
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
@@ -43,7 +48,7 @@
           <li class="active"><a href="<?=base_url('dashboard');?>">Halaman Depan</a></li>
           <li><a href="<?= site_url('barang') ?>">Lihat Stok Barang</a></li>
           <li><a href="<?= site_url('penjualan/catat') ?>">Penjualan</a></li>
-          <li><a href="<?= site_url('penjualan/keluar') ?>">Rekap Barang Keluar</a></li>
+          <li><a href="<?= site_url('penjualan') ?>">Rekap Barang Keluar</a></li>
           <li><a href="<?= site_url('auth/logout') ?>"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
         </div>
       </div>
