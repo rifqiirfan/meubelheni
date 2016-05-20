@@ -8,8 +8,4 @@ $(document).ready(function() {
     autoplayTimeout:5000,
     autoplayHoverPause:true
 })
-});
-
-$('.dropdown-toggle').dropdown(){
-	
-}
+}s
