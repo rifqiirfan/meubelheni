@@ -8,4 +8,4 @@ $(document).ready(function() {
     autoplayTimeout:5000,
     autoplayHoverPause:true
 })
-}s
+}

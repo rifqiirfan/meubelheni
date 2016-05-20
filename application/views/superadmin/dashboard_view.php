@@ -9,6 +9,11 @@
   <link rel='stylesheet' type='text/css'href='http://fonts.googleapis.com/css?family=Roboto:400,700' >
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#example').DataTable();
+    } );
+  </script>
   <link rel="shortcut icon" href="<?=base_url();?>assets/img/mebelheny.ico"-->
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
@@ -77,20 +82,20 @@
 
             <div class="col-md-12">
               <?php if( !empty($barang) ) { ?>
-              <table class= "table table-hover table-responsive">
-                <thead>
-                 <tr>
-                  <td><strong>Nama Barang</strong></td>
-                  <td><strong>Jenis</strong></td>
-                  <td><strong>Tanggal Masuk</strong></td>
-                  <td><strong>Harga</strong></td>
-                  <td><strong>Jumlah</strong></td>
-                  <td><strong>Keterangan</strong></td>
-                </tr>
-              </thead>
+                <table class= "table table-hover table-responsive">
+                  <thead>
+                   <tr>
+                    <td><strong>Nama Barang</strong></td>
+                    <td><strong>Jenis</strong></td>
+                    <td><strong>Tanggal Masuk</strong></td>
+                    <td><strong>Harga</strong></td>
+                    <td><strong>Jumlah</strong></td>
+                    <td><strong>Keterangan</strong></td>
+                  </tr>
+                </thead>
 
-              <?php foreach($barang as $b):?>
-               <tr>
+                <?php foreach($barang as $b):?>
+                <tr>
                  <td><?php echo $b->nama_barang;?></td>
                  <td><?php echo $b->jenis_barang;?></td>
                  <td><?php echo $b->tgl_masuk;?></td>
@@ -117,20 +122,20 @@
     </div><br>
     <div class="col-md-12">
       <?php if( !empty($barangmasuk) ) { ?>
-      <table class= "table table-hover table-responsive">
-        <thead>
-         <tr>
-          <td><strong>Nama Barang</strong></td>
-          <td><strong>Jenis</strong></td>
-          <td><strong>Tanggal Masuk</strong></td>
-          <td><strong>Harga</strong></td>
-          <td><strong>Jumlah</strong></td>
-          <td><strong>Keterangan</strong></td>
-        </tr>
-      </thead>
+        <table class= "table table-hover table-responsive">
+          <thead>
+           <tr>
+            <td><strong>Nama Barang</strong></td>
+            <td><strong>Jenis</strong></td>
+            <td><strong>Tanggal Masuk</strong></td>
+            <td><strong>Harga</strong></td>
+            <td><strong>Jumlah</strong></td>
+            <td><strong>Keterangan</strong></td>
+          </tr>
+        </thead>
 
-      <?php foreach($barangmasuk as $b):?>
-       <tr>
+        <?php foreach($barangmasuk as $b):?>
+        <tr>
          <td><?php echo $b->nama_barang;?></td>
          <td><?php echo $b->jenis_barang;?></td>
          <td><?php echo $b->tgl_masuk;?></td>
