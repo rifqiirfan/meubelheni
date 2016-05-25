@@ -10,7 +10,7 @@ body{
 /*Header*/
 .header{
 	height: 80px;
-	background-color: #FFFFFF;/**#2c3742E62129*/
+	background-color: #000000;/**#2c3742E62129*/
 }
 .header #logo{
 	margin: 0px;
@@ -62,7 +62,7 @@ body{
 }
 
 #kategori li a {
-	color: #FFFFFF;
+	color: #000000;
 	display: block;
 	padding: 12px;
 	font-size: 16px;
@@ -74,14 +74,14 @@ body{
 
 #kategori li a:hover {
 	background-color: #FF9947;
-	color:#FFFFFF;
+	color:#000000;
 	padding-top: 10px;
 	padding-left: 30px;
 }
 
 #kategori li a.selected {
 	background-color: #FF9947;
-	color:#FFFFFF;
+	color:#000000;
 }
 /*Konten bawah slide show*/
 #barang{
