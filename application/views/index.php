@@ -3,35 +3,39 @@
 	<title>Mebel Heni</title>
 	<meta charset="UTF=8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="js/jquery.min.js"></script>
-	<link rel="shortcut icon" href="img/mebelheny.ico"-->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
-	<link rel="stylesheet" type="text/css" href="css/style.css" >
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/> 
-	<link rel="stylesheet" type="text/css" href="css/owl.theme.css"/>
-	<script src="js/style.js"></script>
-	<script src="js/owl.carousel.js"></script>
+	<script src="<?=base_url();?>assets/js/jquery.min.js"></script>
+	<link rel="shortcut icon" href="<?=base_url();?>assets/img/mebelheny.ico"-->
+	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/bootstrap.min.css" >
+	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/style.css" >
+	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/owl.carousel.css"/> 
+	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/owl.theme.css"/>
+	<script src="<?=base_url();?>js/style.js"></script>
+	<script src="<?=base_url();?>js/owl.carousel.js"></script>
 
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="header" id="container">
 		<div id="logo">
-			<a href="#"><img src="img/mebelheny.png" height="60px"></a>
+			<a href="#"><img src="<?=base_url();?>assets/img/mebelheny.png" height="60px"></a>
 		</div>
 		<div id="menu">
 			<nav><ul>
 				<li class="current_page"><a href="#">Halaman Depan</a></li>
 				<li><a href="#">Tentang Kami</a></li>
-				<li><a href="login.php">Login</a></li>	
+				<?php if($this->ion_auth->logged_in()) {?>
+				<li><a href="<?= site_url('dashboard') ?>">Dashboard</a></li>
+				<?php }else{  ?>
+				<li><a href="<?= site_url('auth/login') ?>">Login</a>
+				<?php } ?>	
 			</ul></nav>
 		</div>
 	</div>
 	<div id="body">
 		<div id="owl-demo" class="owl-carousel">
-			<div><img src="img/slide1.jpg" width="100%"></div>
-			<div><img src="img/slide2.jpg" width="100%"></div>
-			<div><img src="img/slide3.jpg" width="100%"></div>
+			<div><img src="<?=base_url();?>assets/img/slide1.jpg" width="100%"></div>
+			<div><img src="<?=base_url();?>assets/img/slide2.jpg" width="100%"></div>
+			<div><img src="<?=base_url();?>assets/img/slide3.jpg" width="100%"></div>
 		</div>
 		<div id="sidebar">
 			<h1>KATEGORI</h1>
@@ -49,7 +53,7 @@
 	<div class="footer">
 		<div class="container">
 			<div class="col-md-3 footer-left">
-				<a href="index.html"><img src="img/mebelheny.png" width="100px" alt=""></a>
+				<a href="index.html"><img src="<?=base_url();?>assets/img/mebelheny.png" width="100px" alt=""></a>
 				<p class="footer-class">Jalan Pangeran Diponegro No. 11 Ngawi, Jawa Timur<br>Telp. (0351) 908201</p>
 			</div>
 			<div class="col-md-2 footer-middle">
