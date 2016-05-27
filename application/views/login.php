@@ -45,16 +45,6 @@
       <p><?php echo form_submit('submit', lang('login_submit_btn'));?></p>
 
       <?php echo form_close();?>
-
-        <!-- <h1>Silakan masuk ke halaman ini!</h1>
-        <form action="login" method="post" id=login>
-            <select name="status">
-                <option value="super admin">Super Admin</option>
-                <option value="admin">Admin</option>
-            </select>
-            <input type="password" placeholder="Password" name = "password"/>
-
-          </form> -->
   </div>
     <div class="footer">
       <div class="container">
