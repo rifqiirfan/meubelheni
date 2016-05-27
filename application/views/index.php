@@ -27,7 +27,7 @@
 				<li class="current_page"><a href="#">Halaman Depan</a></li>
 				<li><a href="#">Tentang Kami</a></li>
 				<?php if($this->ion_auth->logged_in()) {?>
-				<li><a href="<?= site_url('dashboard') ?>">Dashboard</a></li>
+				<li><a href="	">Dashboard</a></li>
 				<?php }else{  ?>
 				<li><a href="<?= site_url('auth/login') ?>">Login</a>
 				<?php } ?>	
@@ -38,9 +38,9 @@
 	<div id="sidebar">
 		<div class="kategori">
 			<nav><ul>
-				<li class="actives"><a href="#">Meja</a></li>
-				<li><a href="#">Kursi</a></li>
-				<li><a href="#">Sofa</a></li>
+				<li class="actives"><a href="meja.php">Meja</a></li>
+				<li><a href="kursi.php">Kursi</a></li>
+				<li><a href="sofa.php">Sofa</a></li>
 				<li><a href="#">Lemari</a></li>
 				<li><a href="#">Kasur</a></li>	
 				<li><a href="#">Loker</a></li>
@@ -51,11 +51,11 @@
 	<div id="content">
 		<div class="slider">
 			<div class="col-md-9">
-				<div id="owl-demo" class="owl-carousel">
+				<!--div id="owl-demo" class="owlcarousel">
 					<div><img src="<?=base_url();?>assets/img/slide1.jpg" width="100%"></div>
 					<div><img src="<?=base_url();?>assets/img/slide2.jpg" width="100%"></div>
 					<div><img src="<?=base_url();?>assets/img/slide3.jpg" width="100%"></div>
-				</div>
+				</div-->
 			</div>
 		</div>
 
@@ -66,38 +66,38 @@
 					<img src="<?=base_url();?>assets/img/meja_tamu.jpg" class="img-responsive" alt="Meja Tamu" height="236px" width="236px">
 					<h4>Meja Kayu Mahoni</h4>
 					<h5>Ukuran : 1,2m x 80cm x 60cm </h5>
-					<a href="#" class="btn btn-primary" role="button">Lihat</a><br>
+					<h5>Harga : Rp1.100.000,00</h5>
 				</div>
 				<div class="col-md-3">
 					<img src="<?=base_url();?>assets/img/kasur.png" class="img-responsive" alt="Sofa2" height="236px" width="236px">
 					<h4>Kasur Anak</h4>
 					<h5>Ukuran : 2m x 1,5m x 1,3m </h5>
-					<a href="#" class="btn btn-primary" role="button">Lihat</a><br>
+					<h5>Harga : Rp1.700.000,00</h5>
 				</div>
 				<div class="col-md-3">
 					<img src="<?=base_url();?>assets/img/sofa2.png" class="img-responsive" alt="Sofa2" height="236px"width="236px">
 					<h4>Sofa</h4>
-					<h5>Deksripsi</h5>
-					<a href="#" class="btn btn-primary" role="button">Lihat</a><br>
+					<h5>Ukuran : 80 cm x 100 cm </h5>
+					<h5>Harga : Rp2.300.000,00</h5>
 				</div>	
 			<div class="row">
 				<div class="col-md-3">
-					<img src="<?=base_url();?>assets/img/meja_tamu.jpg" class="img-responsive" alt="Meja Tamu" height="236px" width="236px">
+					<img src="<?=base_url();?>assets/img/lemari 2.jpg" class="img-responsive" alt="Meja Tamu" height="236px" width="236px">
 					<h4>Lemari</h4>
-					<h5>Deksripsi</h5>
-					<a href="#" class="btn btn-primary" role="button">Lihat</a><br>
+					<h5>Ukuran : 150cm x 60cm x 220 cm x</h5>
+					<h5>Harga : Rp850.000,00</h5>
 				</div>
 				<div class="col-md-3">
 					<img src="<?=base_url();?>assets/img/kasur.png" class="img-responsive" alt="Sofa2" height="236px" width="236px">
 					<h4>Kasur</h4>
-					<h5>Deksripsi</h5>
-					<a href="#" class="btn btn-primary" role="button">Lihat</a><br>
+					<h5>Ukuran : 80cm x 60cm x 220 cm x</h5>
+					<h5>Harga : Rp850.000,00</h5>
 				</div>
 				<div class="col-md-3">
-					<img src="<?=base_url();?>assets/img/sofa2.png" class="img-responsive" alt="Sofa2" height="236px"width="236px">
+					<img src="<?=base_url();?>assets/img/rak buku.jpg" class="img-responsive" alt="Sofa2" height="236px" width="236px">
 					<h4>Loker</h4>
 					<h5>Deksripsi</h5>
-					<a href="#" class="btn btn-primary" role="button">Lihat</a><br>
+					
 				</div>
 			</div>
 		</div>
