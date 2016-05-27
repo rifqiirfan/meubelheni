@@ -10,17 +10,17 @@ body{
 /*Header*/
 .header{
 	height: 80px;
-	background-color: #000000;/**#2c3742E62129*/
+	background-color: #FFFFFF;/**#2c3742E62129*/
 }
 .header #logo{
 	margin: 0px;
-	padding: 10px 60px;
+	padding: 10px 30px;
 }
 /*Navbar*/
 #menu{
 	position: absolute;
 	top: 30px;
-	right: 60px;
+	right: 30px;
 }
 #menu a:hover{
 	background-color : #FF9947;
@@ -29,7 +29,6 @@ body{
 #menu .notification a:hover{
 	background-color: whitesmoke;
 	color: #FF9947;
-
 }
 #menu ul{
 	display: inline-block;
@@ -49,20 +48,18 @@ body{
 	background-color: #000000;
 	color: #FFF;
 }
-/*Sideabar*/
 #sidebar{
 	background-color: #9F9F9F;
 	width: 25%;
 	padding: 18px;
-	margin: 0;
-	float:left;
+	margin: 0 0 ;
 }
 #kategori li {
 	list-style: none;  
 }
 
 #kategori li a {
-	color: #000000;
+	color: #FFFFFF;;
 	display: block;
 	padding: 12px;
 	font-size: 16px;
@@ -74,18 +71,14 @@ body{
 
 #kategori li a:hover {
 	background-color: #FF9947;
-	color:#000000;
+	color:#FFFFFF;
 	padding-top: 10px;
 	padding-left: 30px;
 }
 
 #kategori li a.selected {
 	background-color: #FF9947;
-	color:#000000;
-}
-/*Konten bawah slide show*/
-#barang{
-
+	color:#FFFFFF;
 }
 /*Form khusus Halaman Login*/
 .content{
@@ -95,10 +88,11 @@ body{
 	padding-bottom: 30px;
 }
 #login{
-	padding-top : 50px;
-  	width:400px;
-  	margin:0 auto;
-  	transition:opacity 1s;
+	width:400px;
+	margin:0 auto;
+	transition:opacity 1s;
+	-webkit-transition:opacity 1s;
+}
 #login h1{
 	background-color: rgba(37,130,197,1.0);;
 	padding:20px 0;
@@ -107,7 +101,7 @@ body{
 	text-align:center;
 	color:#fff;
 }
-form #login{
+form{
 	background:rgba(22,73,112,1.0);
 	padding:4% 4%;
 	margin-bottom: -10px;
@@ -209,34 +203,4 @@ p.footer-class a{
 }
 p.footer-class a:hover{
   text-decoration:underline;
-}
-
-.grid-chain-bottom {
-	border-top: 1px solid #ddd;
-}
-.star-price {
-	padding: 1em 0.5em;
-}
-.dolor-grid{
-	float:left;
-}
-span.actual {
-	font-weight: 500; 
-	color:#1DBAA5;
-    font-weight: 700; 
-    font-size:1.2em;
-}
-span.dolor-left-grid{
-	font-size: 1.7em;
-}
-
-a.now-get{
-	font-size: 1.1em;
-	color:#fff;
-	padding:0.6em 0.8em;
-	background:#323A45;
-	text-decoration: none;
-}
-.get-cart-in{
-	float:right;
 }
