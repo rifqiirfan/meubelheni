@@ -14,7 +14,7 @@
     </div>
     <div id="menu">
       <nav><ul>
-        <li><a href="home">Halaman Depan</a></li>
+        <li><a href="<?= site_url('home')?>">Halaman Depan</a></li>
         <li><a href="#">Tentang Kami</a></li>
         <li class="current_page"><a href="login">Login</a></li>
       </ul></nav>
