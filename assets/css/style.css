@@ -1,11 +1,14 @@
 *{
-  font-family: 'Roboto', sans-serif;
-  position: relative;
-  margin: 0px;
-  padding: 0px;
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
 }
 body{
 	background-color: #f7f7f7;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Roboto', sans-serif;
 }
 /*Header*/
 .header{
@@ -13,8 +16,8 @@ body{
 	background-color: #FFFFFF;/**#2c3742E62129*/
 }
 .header #logo{
-	margin: 0px;
-	padding: 10px 30px;
+	margin: 10px 30px;
+	float: left;
 }
 /*Navbar*/
 #menu{
@@ -37,6 +40,7 @@ body{
 	display: block;
 	float: left;
 	text-align: center;
+	margin-left: 
 }
 #menu li a, #menu li span{
 	padding: 16px 1.5em;
@@ -48,45 +52,197 @@ body{
 	background-color: #000000;
 	color: #FFF;
 }
-#sidebar{
-	background-color: #9F9F9F;
-	width: 25%;
-	padding: 18px;
-	margin: 0 0 ;
-}
-#kategori li {
-	list-style: none;  
-}
 
-#kategori li a {
-	color: #FFFFFF;;
-	display: block;
-	padding: 12px;
-	font-size: 16px;
-	-webkit-transition: 0.2s;
-	-moz-transition: 0.2s;
-	-o-transition: 0.2s;
-	transition: 0.2s;
+/*Kategori*/
+.kategori{
+	width: 300px; 
+	padding: 0;
+	margin:0;
+	list-style: none;
+	background: #efefef;
+	float: left;
 }
-
-#kategori li a:hover {
-	background-color: #FF9947;
-	color:#FFFFFF;
-	padding-top: 10px;
-	padding-left: 30px;
+ul {
+	padding: 0;
+	list-style: none;
 }
-
-#kategori li a.selected {
-	background-color: #FF9947;
-	color:#FFFFFF;
-}
-/*Form khusus Halaman Login*/
-.content{
+.kategori > li > a {
 	width: 100%;
-	margin: 0 auto;
-	padding-top: 120px;
-	padding-bottom: 30px;
+	line-height: 3.5em;
+	text-indent: 1.2em;
+	display: block;
+	position: relative;
+	color: #3e3f3f;
+	font-size:15px;
+	text-decoration:none;
+	border-bottom: 1px solid #ddd;
+	font-weight:800;
 }
+.kategori > li > a img{
+	vertical-align: baseline;
+	margin-right: 5px;
+}
+.kategori ul li a {
+	width: 100%;
+	display: block;
+	position: relative;
+	color:#3e3f3f;
+	text-decoration:none;
+	border-bottom: 1px solid #ddd;
+	line-height: 3.5em;
+	text-indent: 1.2em;
+}
+.kategori ul li a:hover{
+	background:#FF9947;
+	color:#fff;
+}
+.kategori > li > a:hover, .kategori > li > a.active {
+	background:#FF9947;
+	border-right: 5px solid #df1f26;
+}
+.kategori ul.kid-menu li a{
+	border-bottom: none;
+}
+/*Ikon menu*/
+#menuicon{
+	display: hidden;
+	width: 60px;
+	height: 60px;
+	background: url("img/menu-icon.jpg");
+}
+#menuicon a:hover {
+	border-radius: 4px 4px 0 0;
+}
+/*Konten*/
+.grid_1{
+	background:#fff;
+	border:5px solid #fff;
+}
+.grid_2{
+	padding:1em 1em 0;
+}
+.grid_2 p{
+	font: 600 15px/15px 'Roboto', sans-serif;
+	color: #797979;
+	line-height: 1.2em;
+	border-bottom: 1px solid #ECECEC;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+}
+a:hover, a:focus {
+	color: #E74C3C;
+	text-decoration:none;
+}
+ul.grid_2-bottom{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+ul.grid_2-bottom li.grid_2-left{
+	float: left;
+	border-right: 1px solid #ECECEC;
+	padding-right: 11%;
+}
+ul.grid_2-bottom li.grid_2-left p{
+	border-bottom: 0;
+	font: 800 20px/20px 'Roboto', sans-serif;
+	color: #000;
+	margin: 3px 0 0 0;
+	padding-bottom: 0;
+}
+ul.grid_2-bottom li.grid_2-right{
+	float:right;
+}
+ul.grid_2-bottom li.grid_2-left p small {
+	font:700 15px/15px 'Roboto', sans-serif;
+	vertical-align: text-top;
+}
+/*Footer*/
+#footer{
+	float: left;
+}
+.footer-middle li{
+	font-size:1.5em;
+	color:#FFFFFFs;
+}
+.footer-middle li a{
+	font-size:0.65em;
+	text-decoration:none;
+	color:#000000;
+}
+.footer-middle li a:hover{
+	color:#8fbf00;
+}
+.footer{
+	background-color : #CCCCCC;
+	padding:3em 0;
+	margin-top: 20px;
+}
+.footer-right ul li{
+	display:inline-block;
+}
+.footer-right ul li a i{
+	background: url(../images/img-sprite.png)no-repeat -91px -50px ;
+	width: 29px;
+	height: 21px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.footer-right ul li a i.we{
+	background-position:-124px -50px ; 
+}
+.footer-right ul li a i.we-in{
+	background-position:-157px -50px ; 
+}
+.footer-right ul li a i.we-at{
+	background-position:-190px -50px ; 
+}
+.footer-right ul li a i.we-at-at{
+	background-position:-224px -50px ; 
+}
+.term{
+	float:left;
+	width:50%;
+}
+.term li{
+	font-size:1.5em;
+	color:#000000;
+}
+.term li a{
+	font-size:0.65em;
+	text-decoration:none;
+	color:#000000;
+}
+.term li a:hover{
+	color:#8fbf00;
+}
+.footer-right ul{
+	padding: 1em 0 0;
+}
+p.footer-class {
+	color: #000;
+	font-size: 1em;
+	line-height: 1.5em;
+	padding: 1em 0 0;
+}
+p.footer-class a{
+	color: #000000;
+}
+p.footer-class a:hover{
+	background-color: #FF9947;
+}
+/*Konten*/
+.top_grid2-box2 {
+	padding-left: 0;
+}
+.top_grid2{
+	margin-top:2em;
+}
+
+.promo img{
+	height: 150px;
+}
+/*KHUSUS LOGIN*/
 #login{
 	width:400px;
 	margin:0 auto;
@@ -129,78 +285,45 @@ input[type="submit"]{
 	transition:background .3s;
 	-webkit-transition:background .3s;
 }
-/*Footer*/
-.footer-middle li{
-	font-size:1.5em;
-	color:#615c85;
+
+/*---------------------------------*/
+@media screen and (max-width: 478px){
+	body{
+		position: absolute;
+	}
 }
-.footer-middle li a{
-	font-size:0.65em;
-	text-decoration:none;
-	color:#615c85;
+@media screen and (max-width: 740px){
+	header{
+		position: absolute;
+	}
+	#menu{
+		display: inline-block;
+	}
+	#menu ul{
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background-color: #FF9947;
+		text-align: center;
+	}
+	#menu li{
+		padding: 10px 0;margin: 0;
+		text-align: center;
+		width: 100%;
+	}
+	#menu a:hover{
+		background-color : #FF9947;
+		color: #FFF;
+	}
+	#menu .notification a:hover{
+		background-color: whitesmoke;
+		color: #FF9947;
+	}
+	#term{
+		display: inline-block;
+	}
 }
-.footer-middle li a:hover{
-	color:#8fbf00;
-}
-.footer{
-	background:#fff;
-	padding:3em 0;
-}
-.footer-right ul li{
-	display:inline-block;
-}
-.footer-right ul li a i{
-	background: url(../images/img-sprite.png)no-repeat -91px -50px ;
-	  width: 29px;
-	  height: 21px;
-	  display: inline-block;
-	  vertical-align: middle;
-}
-.footer-right ul li a i.we{
-	background-position:-124px -50px ; 
-}
-.footer-right ul li a i.we-in{
-	background-position:-157px -50px ; 
-}
-.footer-right ul li a i.we-at{
-	background-position:-190px -50px ; 
-}
-.footer-right ul li a i.we-at-at{
-	background-position:-224px -50px ; 
-}
-.term{
-	float:left;
-	width:50%;
-}
-.term li{
-	font-size:1.5em;
-	color:#615c85;
-}
-.term li a{
-	font-size:0.65em;
-	text-decoration:none;
-	color:#615c85;
-}
-.term li a:hover{
-	color:#8fbf00;
-}
-.footer-right h5{
-	color:#615c85;
-	font-size: 1.1em;
-  	font-weight: 600;	
-}
-.footer-right ul{
-	padding: 1em 0 0;
-}
-p.footer-class {
-  color: #000;
-  font-size: 1em;
-  line-height: 1.5em;
-  padding: 1em 0 0;
-}
-p.footer-class a{
-  color: #8fbf00;
-}
-p.footer-class a:hover{
-  text-decoration:underline;
+/*fitur khusus untuk cetak halaman*/
+@media print{
+
 }
