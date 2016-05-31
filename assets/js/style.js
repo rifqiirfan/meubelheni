@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('.owl-carousel').owlCarousel({
+	$('.owl-demo').owlCarousel({
     items:1,
     loop:true,
     margin:10,
@@ -7,5 +7,5 @@ $(document).ready(function() {
     autoplay:true,
     autoplayTimeout:5000,
     autoplayHoverPause:true
-})
+	})
 }

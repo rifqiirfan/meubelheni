@@ -39,6 +39,7 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
+          <li><a href="<?=base_url('dashboard');?>">Halaman Depan</a></li>
           <li class="active"><a href="<?= site_url('barang/tambah') ?>">Tambah Stok Barang</a></li>
           <li><a href="<?= site_url('barang') ?>">Lihat Stok Barang</a></li>
           <li><a href="<?= site_url('penjualan/masuk') ?>">Rekap Barang Masuk</a></li>
@@ -56,6 +57,7 @@
           <a href="#"><img src="<?=base_url();?>assets/img/mebelheny.png" height="80px" style="padding:10px"></a>
         </div>
         <ul class="nav nav-pills nav-stacked">
+          <li><a href="<?=base_url('dashboard');?>">Halaman Depan</a></li>
           <li class="active"><a href="<?= site_url('barang/tambah') ?>">Tambah Stok Barang</a></li>
           <li><a href="<?= site_url('barang') ?>">Lihat Stok Barang</a></li>
           <li><a href="<?= site_url('penjualan/masuk') ?>">Rekap Barang Masuk</a></li>
