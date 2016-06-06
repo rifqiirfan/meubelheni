@@ -43,8 +43,8 @@
           <li class="active"><a href="<?=base_url('dashboard');?>">Halaman Depan</a></li>
           <li><a href="<?= site_url('barang/tambah') ?>">Tambah Stok Barang</a></li>
           <li><a href="<?= site_url('barang') ?>">Lihat Stok Barang</a></li>
-          <li><a href="<?= site_url('penjualan/masuk') ?>">Rekap Barang Masuk</a></li>
-          <li><a href="<?= site_url('penjualan/keluar') ?>">Rekap Barang Keluar</a></li>
+          <li><a href="<?= site_url('barang') ?>">Rekap Barang Masuk</a></li>
+          <li><a href="<?= site_url('penjualan') ?>">Rekap Barang Keluar</a></li>
           <li><a href="<?= site_url('penjualan/catat') ?>">Rekap Laba</a></li>
           <li><a href="<?= site_url('auth/logout') ?>"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
         </ul>
@@ -62,8 +62,8 @@
         <li class="active"><a href="<?=base_url('dashboard');?>">Halaman Depan</a></li>
         <li><a href="<?= site_url('barang/tambah') ?>">Tambah Stok Barang</a></li>
         <li><a href="<?= site_url('barang') ?>">Lihat Stok Barang</a></li>
-        <li><a href="<?= site_url('penjualan/masuk') ?>">Rekap Barang Masuk</a></li>
-        <li><a href="<?= site_url('penjualan/keluar') ?>">Rekap Barang Keluar</a></li>
+        <li><a href="<?= site_url('barang') ?>">Rekap Barang Masuk</a></li>
+        <li><a href="<?= site_url('penjualan') ?>">Rekap Barang Keluar</a></li>
         <li><a href="<?= site_url('penjualan/catat') ?>">Rekap Laba</a></li>
         <li><a href="<?= site_url('auth/logout') ?>"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
       </ul><br>
