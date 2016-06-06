@@ -78,7 +78,9 @@
         }else{
           echo "<h4>Selamat datang, Admin!</h4>";
         } ?>
-        <p>Hari ini Jumat, 29 April 2016</p>
+        <p><?php
+            date_default_timezone_set("Asia/Jakarta");
+            echo "Hari ini".date(" l, d m Y ")."pukul".date(" h:i ");?></p>
       </div>
       <div class="row">
         <div class="col-sm-6">

@@ -71,7 +71,7 @@
     <div class="col-sm-9">
       <div class="well">
         <h4>Selamat datang, Super Admin!</h4>
-        <p>Hari ini Jumat, 29 April 2016</p>
+        <p>Hari ini <time datetime="DD sMM YYYY Thh:mm:ssTZD"></time></p>
       </div>
       <div class="row">
         <div class="col-sm-6">
