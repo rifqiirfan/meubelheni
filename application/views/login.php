@@ -21,22 +21,23 @@
     </div>
   </div>
   <div class="content" id="login">
+    <h1>Silakan melakukan login!</h1>
     <?php if(isset($message)){?>
       <div id="infoMessage"><?php echo $message;?></div>
       <?php } ?>
       <?php echo form_open("login");?>
 
-      <p>
+      <p style="color:#FFFFFF">
         <?php echo lang('login_identity_label', 'identity');?>
         <?php echo form_input($identity);?>
       </p>
 
-      <p>
+      <p style="color:#FFFFFF">
         <?php echo lang('login_password_label', 'password');?>
         <?php echo form_input($password);?>
       </p>
 
-      <p>
+      <p style="color:#FFFFFF">
         <?php echo lang('login_remember_label', 'remember');?>
         <?php echo form_checkbox('remember', '1', FALSE, 'id="remember"');?>
       </p>

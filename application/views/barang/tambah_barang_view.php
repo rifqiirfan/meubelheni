@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Super Admin | Mebel Heni</title>
+  <title>Tambah Stok Barang - Super Admin || Mebel Heni</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -71,76 +71,65 @@
       <div class="col-sm-9">
         <div class="well">
           <h4>Selamat datang, Super Admin!</h4>
-          <p>Hari ini Jumat, 29 April 2016</p>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="well">
-              <div class="row">
-                <h3 class="text">Tambah Stok Barang</h3>
-              </div><br>
-
-              <div class="col-md-12">
-                <?php if(isset($_SESSION)) {
-                  echo $this->session->flashdata('flash_data');
-                } ?>
-                <form class="form-horizontal" role="form" method="POST" action="<?= site_url('barang/tambah_process') ?>">
-                  <div class="form-group">
-                    <h4><label for="nama" class="col-md-3 control-label">Nama barang</label></h4>
-                    <div class="col-md-6">
-                      <input id="nama_barang" type="text" class="validate" name="nama_barang" value="<?php echo set_value('nama_barang'); ?>">
-                    </div>
-                  </div>
-                  <div class="row">
-                   <div class="input-field col s12">
-                    <label for="jenis_barang">Jenis barang</label>
-                    <input id="jenis_barang" type="text" class="validate" name="jenis_barang" >
-                  </div>
-                </div>
-
-                <div class="row">
-                 <div class="input-field col s12">
-                  <label for="tgl_masuk">Tanggal masuk</label>
-                  <input id="tgl_masuk" type="date" class="validate" name="tgl_masuk">
-                </div>
-              </div>
-
-              <div class="row">
-               <div class="input-field col s12">
-                <label for="harga">Harga</label>
-                <input id="harga" type="text" class="validate" name="harga" value="<?php echo set_value('harga'); ?>">
-              </div>
-            </div>
-
-            <div class="row">
-             <div class="input-field col s12">
-              <label for="jumlah">Jumlah</label>
-              <input id="jumlah" type="text" class="validate" name="jumlah" value="<?php echo set_value('jumlah'); ?>">
-            </div>
+          <p><?php
+            date_default_timezone_set("Asia/Jakarta");
+            echo "Hari ini".date(" l, d m Y ")."pukul".date(" h:i ");?></p>
           </div>
-
           <div class="row">
-           <div class="input-field col s12">
-            <label for="keterangan">Keterangan</label>
-            <input id="keterangan" type="text" class="validate" name="keterangan">
+            <div class="col-sm-12">
+              <div class="well">
+                <div class="row">
+                  <h3 class="text">Tambah Stok Barang</h3>
+                </div><br>
+
+                <div class="col-md-12">
+                  <?php if(isset($_SESSION)) {
+                    echo $this->session->flashdata('flash_data');
+                  } ?>
+                  <form class="form-horizontal" role="form" method="POST" action="<?= site_url('barang/tambah_process') ?>">
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="nama">Nama barang</label>
+                      <div class="col-sm-9">
+                        <input id="nama_barang" type="text" class="form-control" name="nama_barang" value="<?php echo set_value('nama_barang'); ?>">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="tgl_masuk">Tanggal masuk</label>
+                      <div class="col-sm-3">          
+                        <input id="tgl_masuk" type="date" class="form-control" name="tgl_masuk">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="harga">Harga</label>
+                      <div class="col-sm-9">          
+                        <input id="harga" type="text" class="form-control" name="harga" value="<?php echo set_value('harga'); ?>">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="jumlah">Jumlah</label>
+                      <div class="col-sm-9">          
+                        <input id="jumlah" type="text" class="form-control" name="jumlah" value="<?php echo set_value('jumlah'); ?>">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="keterangan">Keterangan</label>
+                      <div class="col-sm-9">          
+                        <input id="keterangan" type="text" class="form-control" name="keterangan" value="<?php echo set_value('keterangan'); ?>">
+                      </div>
+                    </div>
+                    <div class="form-group">        
+                      <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <!-- <div class="form-group"> -->
-        <div class="col-md-6 col-md-offset-4">
-          <button class="btn btn-info" type="submit" name="action">Submit
-          </button>
-        </div>
-        <!-- </div> -->
-      </form>
-
+      </div>
     </div>
-
   </div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </body>
 </html>

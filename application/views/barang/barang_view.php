@@ -7,10 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/superadmin_style.css">
+  <link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/dataTables.bootstrap.css">
   <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Roboto:400,700'>
+  <script src="<?=base_url();?>assets/js/metisMenu/metisMenu.min.js"></script>
+  <script src="<?=base_url();?>assets/js/dataTables/jqeury.dataTables.js"></script>
+  <script src="<?=base_url();?>assets/js/dataTables/dataTables.bootstrap.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="shortcut icon" href="<?=base_url();?>assets/img/mebelheny.ico"-->
+  <script>
+      $(document).ready(function() {
+          $('#dataTables-example').dataTable();
+      });
+  </script>
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 550px}
@@ -72,7 +81,9 @@
   <div class="col-sm-9">
     <div class="well">
       <h4>Selamat datang, Super Admin!</h4>
-      <p>Hari ini Jumat, 29 April 2016</p>
+      <p><?php
+            date_default_timezone_set("Asia/Jakarta");
+            echo "Hari ini".date(" l, d m Y ")."pukul".date(" h:i ");?></p>
     </div>
     <div class="row">
       <div class="col-sm-12">
@@ -80,10 +91,9 @@
           <div class="row">
             <h2 class="text">Lihat Stok Barang</h2>
           </div><br>
-
-          <div class="col-md-12">
+          <div class="table-responsive col-md-12">
             <?php if( !empty($barang) ) { ?>
-            <table class= "table table-hover table-responsive">
+            <table class= "table table-hover" id="dataTables-example">
               <thead>
                <tr>
                 <td><strong>Nama Barang</strong></td>
