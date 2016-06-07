@@ -31,14 +31,101 @@
 
   <!-- SUPER ADMIN -->
   <?php if($this->ion_auth->is_admin()){  ?>
-    <h1>Selamat datang, Super Admin!</h1>
+
+    <div class="panel panel-primary">
+     <div class="panel-heading">Rekap Barang</div>
+     <div class="panel-body">
+        <div class="row">
+            <div class="col-md-6">
+              <div class="panel panel-info">
+               <div class="panel-heading"><span class="glyphicon glyphicon-arrow-down"></span> Rekap Barang Masuk</div>
+               <div class="panel-body">
+
+                 <?php if( !empty($barang_masuk) ) { ?>
+                 <table class= "table table-hover table-responsive" id="dataTables-example">
+                   <thead>
+                    <tr>
+                     <td><strong>Nama Barang</strong></td>
+                     <td><strong>Jenis</strong></td>
+                     <td><strong>Tanggal Masuk</strong></td>
+                     <td><strong>Harga</strong></td>
+                     <td><strong>Jumlah</strong></td>
+                     <td><strong>Keterangan</strong></td>
+                   </tr>
+                 </thead>
+
+                 <?php foreach($barang_masuk as $bm):?>
+                  <tr>
+                    <td><?php echo $bm->nama_barang;?></td>
+                    <td><?php echo $bm->jenis_barang;?></td>
+                    <td><?php echo $bm->tgl_masuk;?></td>
+                    <td><?php echo $bm->harga;?></td>
+                    <td><?php echo $bm->jumlah;?></td>
+                    <td><?php echo $bm->keterangan;?></td>
+                  </tr>
+                 <?php endforeach;
+                 }else{
+                   echo "Empty";
+                 }
+                 ?>
+
+                 </table>
+
+
+               </div>
+             </div>
+           </div>
+
+
+
+            <div class="col-md-6">
+              <div class="panel panel-info">
+               <div class="panel-heading"><span class="glyphicon glyphicon-arrow-up"></span> Rekap Penjualan</div>
+               <div class="panel-body">
+
+                 <?php if( !empty($barang_keluar) ) { ?>
+                 <table class= "table table-hover" id="dataTables-example">
+                   <thead>
+                    <tr>
+                     <td><strong>Nama Barang</strong></td>
+                     <td><strong>Jenis</strong></td>
+                     <td><strong>Tanggal Keluar</strong></td>
+                     <td><strong>Harga</strong></td>
+                     <td><strong>Keterangan</strong></td>
+                   </tr>
+                 </thead>
+
+                 <?php foreach($barang_keluar as $bk):?>
+                  <tr>
+                    <td><?php echo $bk->nama_barang;?></td>
+                    <td><?php echo $bk->jenis_barang;?></td>
+                    <td><?php echo $bk->tgl_keluar;?></td>
+                    <td><?php echo $bk->harga;?></td>
+                    <td><?php echo $bk->keterangan;?></td>
+                  </tr>
+                 <?php endforeach;
+                 }else{
+                 echo "Empty";
+                 }
+                 ?>
+
+                 </table>
+
+               </div>
+             </div>
+            </div>
+
+      </div>
+    </div>
+
+
 
   <!-- ADMIN -->
   <?php }else{ ?>
 
-  <div class="well" well-md>
-    <h1>Selamat datang, Admin!</h1>
-    <div class="col-md-12">
+    <div class="panel panel-primary">
+      <div class="panel-heading">Tabel Stok Barang</div>
+        <div class="panel-body">
       <?php if( !empty($barang) ) { ?>
         <table class= "table table-hover table-responsive">
           <thead>
@@ -64,7 +151,6 @@
        <?php } ?>
       </table>
     </div>
-  </div>
 
   <?php } ?>
 
