@@ -18,6 +18,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     }
 
+    function rekap_barang_keluar(){
+      if($this->ion_auth->logged_in()){
+          $this->load->model('PenjualanModel');
+          $this->data['rekap_barang_keluar'] = $this->PenjualanModel->getRekapBarangKeluar();
+          $this->load->view('penjualan\rekap_barang_keluar_view', $this->data);
+      }else{
+          return show_error('You must log in to view this page.');
+      }
+
+    }
+
     function catat(){
         if($this->ion_auth->logged_in()){
           $this->load->model('BarangModel');
@@ -40,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     function catat_process(){
        $this->load->helper(array('form', 'url'));
        $this->load->library('form_validation');
-       
+
        $this->form_validation->set_rules('tgl_keluar', 'harga', 'required');
 
       if ($this->form_validation->run() == FALSE){
