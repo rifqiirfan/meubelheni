@@ -55,12 +55,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
        $this->form_validation->set_rules('tgl_keluar', 'harga', 'required');
 
       if ($this->form_validation->run() == FALSE){
-        $this->session->set_flashdata('flash_data', 'Harap isi form dengan benar.');
-        redirect('penjualan\catat_penjualan');
+
+        $this->session->set_flashdata('flash_data', validation_errors());
+        $id = $this->input->post('id_barang');
+        redirect('penjualan/'.$id.'/catat');
+
       }else{
         $this->load->model('PenjualanModel');
         $this->PenjualanModel->catat_penjualan();
-        redirect('penjualan/catat');
+        redirect('dashboard');
       }
     }
 }
