@@ -39,6 +39,7 @@
           </div>
           <ul class="nav navbar-nav">
             <li class="active"><a href="<?= site_url('dashboard') ?>"><span class="glyphicon glyphicon-home"></span> Dashboard</a></li>
+            <li class="active"><a href="<?= site_url('barang') ?>">Stok Barang</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="<?= site_url('auth/logout') ?>"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>

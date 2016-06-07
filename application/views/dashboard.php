@@ -33,7 +33,7 @@
   <?php if($this->ion_auth->is_admin()){  ?>
 
     <div class="panel panel-primary">
-     <div class="panel-heading">Rekap Barang</div>
+     <div class="panel-heading">Rekap Barang Bulan Ini</div>
      <div class="panel-body">
         <div class="row">
             <div class="col-md-6">
