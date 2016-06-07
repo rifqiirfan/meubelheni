@@ -21,9 +21,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       if($this->ion_auth->logged_in()){
 
         $this->load->model('BarangModel');
-        $this->data['barang_masuk'] = $this->BarangModel->getBarangMasuk();
-        $this->data['barang_keluar'] = $this->BarangModel->getBarangKeluar();
-        $this->load->view('dashboard_view', $this->data);
+        // $this->data['barang_masuk'] = $this->BarangModel->getBarangMasuk();
+        // $this->data['barang_keluar'] = $this->BarangModel->getBarangKeluar();
+        $this->data['barang'] = $this->BarangModel->getBarang();
+        $this->load->view('dashboard', $this->data);
+        // $this->load->view('dashboard');
 
       }else{
         return show_error('You must log in to view this page.');

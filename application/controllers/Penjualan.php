@@ -45,7 +45,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       $this->load->model('BarangModel');
       $this->data['barang'] = $this->BarangModel->getBarangTertentu($this->uri->segment(2));
 
-      $this->load->view('penjualan\catat_penjualan_view',$this->data);
+      $this->load->view('penjualan\catat_penjualan',$this->data);
     }
 
     function catat_process(){
