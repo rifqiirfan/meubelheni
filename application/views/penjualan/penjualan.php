@@ -24,6 +24,7 @@
              <tr>
               <td><strong>Nama Barang</strong></td>
               <td><strong>Jenis</strong></td>
+              <td><strong>Tanggal Masuk</strong></td>
               <td><strong>Tanggal Keluar</strong></td>
               <td><strong>Harga</strong></td>
               <?php if($this->ion_auth->is_admin()){?>
@@ -39,6 +40,7 @@
           <tr>
            <td><?php echo $bk->nama_barang;?></td>
            <td><?php echo $bk->jenis_barang;?></td>
+           <td><?php echo $bk->tgl_masuk;?></td>
            <td><?php echo $bk->tgl_keluar;?></td>
            <td><?php echo $bk->harga;?></td>
            <?php if($this->ion_auth->is_admin()){?>
