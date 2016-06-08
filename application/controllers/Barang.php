@@ -10,7 +10,10 @@ class Barang extends CI_Controller{
     if($this->ion_auth->logged_in()){
         $this->load->model('BarangModel');
         $this->data['barang'] = $this->BarangModel->getBarang();
-        $this->load->view('barang\barang_view', $this->data);
+        // $this->load->view('barang\barang_view', $this->data);
+
+        $this->load->view('template\header');
+        $this->load->view('barang\barang', $this->data);
     }else{
         return show_error('You must log in to view this page.');
     }
@@ -19,14 +22,17 @@ class Barang extends CI_Controller{
 
   function tambah(){
     if($this->ion_auth->is_admin()){
-        $this->load->view('barang\tambah_view');
+        $this->load->view('template\header');
+        $this->load->view('barang\tambah_pilihan');
+
     }else{
         return show_error('You have no authorization to view this page.');
     }
   }
 
   function tambah_barang(){
-    $this->load->view('barang\tambah_barang_view');
+    $this->load->view('template\header');
+    $this->load->view('barang\tambah_barang');
   }
 
   function tambah_process(){

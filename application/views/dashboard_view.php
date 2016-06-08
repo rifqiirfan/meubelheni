@@ -40,13 +40,14 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
+          <?php if($this->ion_auth->is_admin()){ ?>
           <li class="active"><a href="<?=base_url('dashboard');?>">Halaman Depan</a></li>
-          <li><a href="<?= site_url('barang/tambah') ?>">Tambah Stok Barang</a></li>
+          <li><a href="<?= site_url('barang/tambah') ?>">Catat Barang Masuk</a></li>
           <li><a href="<?= site_url('barang') ?>">Lihat Stok Barang</a></li>
-          <li><a href="<?= site_url('penjualan/masuk') ?>">Rekap Barang Masuk</a></li>
-          <li><a href="<?= site_url('penjualan/keluar') ?>">Rekap Barang Keluar</a></li>
+          <li><a href="<?= site_url('penjualan') ?>">Rekap Penjualan</a></li>
           <li><a href="<?= site_url('penjualan/catat') ?>">Rekap Laba</a></li>
           <li><a href="<?= site_url('auth/logout') ?>"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+          <?php } ?>
         </ul>
       </div>
     </div>
@@ -85,13 +86,14 @@
       <div class="row">
         <div class="col-sm-6">
           <div class="well">
+            <?php if($this->ion_auth->is_admin()){ ?>
            <div class="row">
             <h3 class="text">Rekap Barang Masuk</h3>
             <a href="<?= site_url('barang') ?>" class="btn btn-primary" role="button" class="text-right"><span class="glyphicon glyphicon-folder-open"></span> Masuk</a>
 
             <div class="col-md-12">
               <?php if( !empty($barang_masuk) ) { ?>
-              <table class= "table table-hover table-responsive">
+              <table class= "table table-hover table-responsive" id="dataTables-example">
                 <thead>
                  <tr>
                   <td><strong>Nama Barang</strong></td>
@@ -118,8 +120,9 @@
           }
           ?>
 
-        </table>
+          </table>
       </div>
+
     </div>
   </div>
 </div>
@@ -129,9 +132,9 @@
       <h3 class="text">Rekap Penjualan</h3>
       <a href="<?= site_url('penjualan') ?>" class="btn btn-primary" role="button" class="text-right"><span class="glyphicon glyphicon-folder-open"></span> Masuk</a>
     </div><br>
-    <div class="col-md-12">
+    <div class="table-responsive col-md-12">
       <?php if( !empty($barang_keluar) ) { ?>
-      <table class= "table table-hover table-responsive">
+      <table class= "table table-hover" id="dataTables-example">
         <thead>
          <tr>
           <td><strong>Nama Barang</strong></td>
@@ -158,6 +161,7 @@
 
 </table>
 </div>
+<?php } ?>
 </div>
 </div>
 </div>

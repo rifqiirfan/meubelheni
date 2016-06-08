@@ -10,7 +10,7 @@
 	<link rel="shortcut icon" href="<?=base_url();?>assets/img/mebelheny.ico"-->
 	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/bootstrap.min.css" >
 	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/style.css" >
-	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/owl.carousel.css"/> 
+	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/owl.carousel.css"/>
 	<link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/owl.theme.css"/>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
 	<script src="<?=base_url();?>assets/js/style.js"></script>
@@ -27,10 +27,10 @@
 				<li class="current_page"><a href="#">Halaman Depan</a></li>
 				<li><a href="#">Tentang Kami</a></li>
 				<?php if($this->ion_auth->logged_in()) {?>
-				<li><a href="	">Dashboard</a></li>
+				<li><a href="<?=base_url();?>dashboard">Dashboard</a></li>
 				<?php }else{  ?>
 				<li><a href="<?= site_url('auth/login') ?>">Login</a>
-				<?php } ?>	
+				<?php } ?>
 			</ul></nav>
 		</div>
 	</div>
@@ -42,10 +42,10 @@
 				<li><a href="kursi.php">Kursi</a></li>
 				<li><a href="sofa.php">Sofa</a></li>
 				<li><a href="#">Lemari</a></li>
-				<li><a href="#">Kasur</a></li>	
+				<li><a href="#">Kasur</a></li>
 				<li><a href="#">Loker</a></li>
 			</ul></nav>
-		</div>	
+		</div>
 	</div>
 
 	<div id="content">
@@ -79,7 +79,7 @@
 					<h4>Sofa</h4>
 					<h5>Ukuran : 80 cm x 100 cm </h5>
 					<h5>Harga : Rp2.300.000,00</h5>
-				</div>	
+				</div>
 			<div class="row">
 				<div class="col-md-3">
 					<img src="<?=base_url();?>assets/img/lemari 2.jpg" class="img-responsive" alt="Meja Tamu" height="236px" width="236px">
@@ -97,7 +97,7 @@
 					<img src="<?=base_url();?>assets/img/rak buku.jpg" class="img-responsive" alt="Sofa2" height="236px" width="236px">
 					<h4>Loker</h4>
 					<h5>Deksripsi</h5>
-					
+
 				</div>
 			</div>
 		</div>

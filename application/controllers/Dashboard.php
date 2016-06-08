@@ -23,7 +23,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         $this->load->model('BarangModel');
         $this->data['barang_masuk'] = $this->BarangModel->getBarangMasuk();
         $this->data['barang_keluar'] = $this->BarangModel->getBarangKeluar();
-        $this->load->view('dashboard_view', $this->data);
+        $this->data['barang'] = $this->BarangModel->getBarang();
+
+        $this->load->view('template\header');
+        $this->load->view('dashboard', $this->data);
 
       }else{
         return show_error('You must log in to view this page.');

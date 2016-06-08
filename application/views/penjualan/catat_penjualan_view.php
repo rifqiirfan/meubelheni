@@ -56,12 +56,13 @@
       <h4>Selamat datang, Super Admin!</h4>
       <p>Hari ini Jumat, 29 April 2016</p>
     </div>
+  </div>
     <div class="row">
       <div class="col-sm-12">
-        <d<div class="well well-lg">
-      <div class="row">
-        <h3 class="text">Catat Penjualan</h3>
-      </div>
+        <div class="well well-lg">
+          <div class="row">
+            <h3 class="text">Catat Penjualan</h3>
+          </div>
 
 
             <?php if(isset($_SESSION)) {
@@ -125,10 +126,11 @@
             echo "Data kosong";
           }?>
 
-</div>
-</div>
-</div>
-</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 </body>
 

@@ -24,13 +24,13 @@
     }
 
     function getBarangMasuk(){
-      $query = $this->db->select('*')->from('barang b')->join('barang_masuk bm', 'b.id_barang = bm.id_barang')->limit('5')->get()->result();
+      $query = $this->db->select('*')->from('barang b')->join('barang_masuk bm', 'b.id_barang = bm.id_barang')->where('MONTH(tgl_masuk)', date('m'))->get()->result();
 
       return $query;
     }
 
     function getBarangKeluar(){
-      $query = $this->db->select('*')->from('barang b')->join('barang_keluar bk', 'b.id_barang = bk.id_barang')->limit('5')->get()->result();
+      $query = $this->db->select('*')->from('barang b')->join('barang_keluar bk', 'b.id_barang = bk.id_barang')->where('MONTH(tgl_keluar)', date('m'))->get()->result();
       return $query;
 
     }
