@@ -12,11 +12,16 @@
       return $query;
     }
 
+        function getHarga($id_barang){
+            $query = $this->db->select('harga')->from('barang_masuk')->where('id_barang', $id_barang)->order_by('tgl_masuk', 'DESC')->get()->row();
+
+          return $query->harga;
+        }
 
     function catat_penjualan(){
       $id_barang = $this->input->post('id_barang');
       $tgl_keluar = $this->input->post('tgl_keluar');
-      $harga = $this->input->post('harga');
+      $harga = (int)$this->input->post('harga');
 
       $keterangan = $this->input->post('keterangan');
 
@@ -36,12 +41,5 @@
       $this->db->insert('barang_keluar', $data);
 
     }
-
-    function getHarga($id_barang){
-      $query = $this->db->select('harga')->from('barang_masuk')->where('id_barang', $id_barang)->get()->result();
-      return $query;
-    }
-
-
 
   }
