@@ -11,7 +11,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             $this->load->model('PenjualanModel');
             $this->data['barang_keluar'] = $this->PenjualanModel->getBarangKeluar();
 
-            $this->load->view('penjualan\penjualan_view', $this->data);
+            $this->load->view('template\header');
+            $this->load->view('penjualan\penjualan', $this->data);
         }else{
             return show_error('You must log in to view this page.');
         }

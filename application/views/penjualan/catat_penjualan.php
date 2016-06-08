@@ -28,14 +28,12 @@
 </head>
 <body>
   <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="well well-lg">
-          <div class="row">
-            <h3 class="text">Catat Penjualan</h3>
-          </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            Catat Penjualan
+        </div>
 
-
+          <div class="panel-body">
             <?php if(isset($_SESSION)) {
               echo $this->session->flashdata('flash_data');
             } ?>
@@ -97,8 +95,8 @@
             echo "Data kosong";
           }?>
 
-          </div>
         </div>
-  </div>
+      </div>
+    </div>
 </body>
 </head>

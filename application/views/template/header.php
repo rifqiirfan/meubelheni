@@ -40,13 +40,20 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="<?= site_url('dashboard') ?>"><span class="glyphicon glyphicon-home"></span> Dashboard</a></li>
             <li class="active"><a href="<?= site_url('barang') ?>">Stok Barang</a></li>
+            <li class="active"><a href="<?= site_url('barang/tambah') ?>">Tambah Barang</a></li>
+            <li class="active"><a href="<?= site_url('penjualan') ?>">Rekap Penjualan</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="<?= site_url('auth/logout') ?>"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
           </ul>
         </div>
       </nav>
-      <div class="panel-body">Welcome, Super Admin!</div>
+      <div class="panel-body"><p><strong>Welcome, Super Admin!</strong></p>
+        <p><?php
+          date_default_timezone_set("Asia/Jakarta");
+          echo date(" l, d m Y ")."pukul".date(" h:i ");?></p>
+
+      </div>
 
       <!-- ADMIN  -->
       <?php }else{ ?>
@@ -63,8 +70,13 @@
           </ul>
         </div>
       </nav>
-      <div class="panel-body">Welcome, Admin!</div>
-      <?php } ?>
+      <div class="panel-body"><p><strong>Welcome, Admin!</strong></p>
+        <p><?php
+          date_default_timezone_set("Asia/Jakarta");
+          echo date(" l, d m Y ")."pukul".date(" h:i ");?></p>
+        <?php } ?>
+      </div>
+
 
     </div>
 
