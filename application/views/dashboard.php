@@ -33,7 +33,11 @@
   <?php if($this->ion_auth->is_admin()){  ?>
 
     <div class="panel panel-primary">
-     <div class="panel-heading">Rekap Barang Bulan Ini</div>
+     <div class="panel-heading"><p>Rekap Barang Bulan Ini
+       <?php
+         date_default_timezone_set("Asia/Jakarta");
+         echo " -- <strong>".date("F Y")."</strong>";?></p>
+      </div>
 
      <div class="panel-body">
        <?php if(!empty($this->session->flashdata('flash_data'))) {

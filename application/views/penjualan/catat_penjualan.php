@@ -62,9 +62,9 @@
                   </div>
 
                   <div class="form-group">
-                    <label class="control-label col-sm-2" for="tgl_masuk">Tanggal masuk</label>
+                    <label class="control-label col-sm-2" for="tgl_keluar">Tanggal penjualan</label>
                     <div class="col-sm-9">
-                      <input id="tgl_masuk" type="date" class="form-control" name="tgl_masuk" value="<?php echo set_value('tgl_masuk'); ?>">
+                      <input id="tgl_keluar" type="date" class="form-control" name="tgl_keluar" value="<?php echo set_value('tgl_keluar'); ?>">
                     </div>
                   </div>
 
@@ -72,13 +72,6 @@
                     <label class="control-label col-sm-2" for="harga">Harga</label>
                     <div class="col-sm-9">
                       <input id="harga" type="number" class="form-control" name="harga" value="<?php echo set_value('harga'); ?>">
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <label class="control-label col-sm-2" for="jumlah">Jumlah</label>
-                    <div class="col-sm-9">
-                      <input id="jumlah" type="number" class="form-control" name="jumlah" value="<?php echo set_value('jumlah'); ?>">
                     </div>
                   </div>
 

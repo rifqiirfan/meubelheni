@@ -51,7 +51,7 @@
       <div class="panel-body"><p><strong>Welcome, Super Admin!</strong></p>
         <p><?php
           date_default_timezone_set("Asia/Jakarta");
-          echo date(" l, d m Y ")."pukul".date(" h:i ");?></p>
+          echo date(" l, d F Y ")."pukul".date(" h:i ");?></p>
 
       </div>
 

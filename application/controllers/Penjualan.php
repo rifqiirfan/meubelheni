@@ -56,7 +56,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
        $this->form_validation->set_rules('nama_barang', 'nama_barang', 'required');
        $this->form_validation->set_rules('jenis_barang', 'jenis_barang', 'required');
-       $this->form_validation->set_rules('jumlah', 'jumlah', 'required');
        $this->form_validation->set_rules('harga', 'harga', 'required');
 
       if ($this->form_validation->run() == FALSE){
