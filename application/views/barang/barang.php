@@ -23,6 +23,13 @@
             Lihat Stok Barang
       </div>
         <div class="panel-body">
+          <?php if(!empty($this->session->flashdata('flash_data'))) {
+            echo "<div class='alert alert-success'>";
+            echo "<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>";
+            echo $this->session->flashdata('flash_data');
+            echo "</div>";
+          } ?>
+
           <?php if( !empty($barang) ) { ?>
           <table class= "table table-hover" id="dataTables-example">
             <thead>

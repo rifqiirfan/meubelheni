@@ -18,46 +18,64 @@
       <div class="panel-heading">Tambah Stok Barang</div>
 
         <div class="panel-body">
-          <?php if(isset($_SESSION)) {
-            echo $this->session->flashdata('flash_data');
+          <?php if(!empty($this->session->flashdata('flash_data'))) {
+             echo "<div class='alert alert-warning'>";
+             echo "<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>";
+             echo $this->session->flashdata('flash_data');
+             echo "</div>";
           } ?>
           <form class="form-horizontal" role="form" method="POST" action="<?= site_url('barang/tambah_process') ?>">
+
             <div class="form-group">
-              <label class="control-label col-sm-2" for="nama">Nama barang</label>
+              <label class="control-label col-sm-2" for="nama_barang">Nama barang</label>
               <div class="col-sm-9">
-                <input id="nama_barang" type="text" class="form-control" name="nama_barang" value="<?php echo set_value('nama_barang'); ?>">
+                <input id="nama_barang" type="text" class="form-control" name="nama_barang" value="<?php echo set_value('nama_barang'); ?>" required>
               </div>
             </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="jenis_barang">Jenis barang</label>
+              <div class="col-sm-9">
+                <input id="jenis_barang" type="text" class="form-control" name="jenis_barang" value="<?php echo set_value('jenis_barang'); ?>" required>
+              </div>
+            </div>
+
             <div class="form-group">
               <label class="control-label col-sm-2" for="tgl_masuk">Tanggal masuk</label>
               <div class="col-sm-3">
-                <input id="tgl_masuk" type="date" class="form-control" name="tgl_masuk">
+                <input id="tgl_masuk" type="date" class="form-control" name="tgl_masuk" required>
               </div>
             </div>
+
             <div class="form-group">
               <label class="control-label col-sm-2" for="harga">Harga</label>
               <div class="col-sm-9">
-                <input id="harga" type="text" class="form-control" name="harga" value="<?php echo set_value('harga'); ?>">
+                <input id="harga" type="number" class="form-control" name="harga" value="<?php echo set_value('harga'); ?>" required>
               </div>
             </div>
+
             <div class="form-group">
               <label class="control-label col-sm-2" for="jumlah">Jumlah</label>
               <div class="col-sm-9">
-                <input id="jumlah" type="text" class="form-control" name="jumlah" value="<?php echo set_value('jumlah'); ?>">
+                <input id="jumlah" type="number" class="form-control" name="jumlah" value="<?php echo set_value('jumlah'); ?>" required>
               </div>
             </div>
+
             <div class="form-group">
               <label class="control-label col-sm-2" for="keterangan">Keterangan</label>
               <div class="col-sm-9">
                 <input id="keterangan" type="text" class="form-control" name="keterangan" value="<?php echo set_value('keterangan'); ?>">
               </div>
             </div>
+
             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10">
                 <button type="submit" class="btn btn-primary">Submit</button>
               </div>
             </div>
+
           </form>
+
         </div>
   </div>
 </body>
