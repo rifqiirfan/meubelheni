@@ -54,7 +54,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
        $this->load->helper(array('form', 'url'));
        $this->load->library('form_validation');
 
-       $this->form_validation->set_rules('tgl_keluar', 'harga', 'required');
+       $this->form_validation->set_rules('nama_barang', 'nama_barang', 'required');
+       $this->form_validation->set_rules('jenis_barang', 'jenis_barang', 'required');
+       $this->form_validation->set_rules('harga', 'harga', 'required');
 
       if ($this->form_validation->run() == FALSE){
 
@@ -65,6 +67,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       }else{
         $this->load->model('PenjualanModel');
         $this->PenjualanModel->catat_penjualan();
+        $this->session->set_flashdata('flash_data', "Data berhasil dimasukkan. Catat penjualan sukses.");
         redirect('dashboard');
       }
     }

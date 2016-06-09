@@ -7,9 +7,24 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/superadmin_style.css">
   <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Roboto:400,700'>
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/superadmin_style.css">
+  <link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/dataTabless.bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/metisMenu.min.css">
+  <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Roboto:400,700'>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link rel="shortcut icon" href="<?=base_url();?>assets/img/mebelheny.ico"-->
+  <script src="<?=base_url();?>assets/js/metisMenu/metisMenu.min.js"></script>
+  <script src="<?=base_url();?>assets/js/dataTables/jquery.dataTables.js"></script>
+  <script src="<?=base_url();?>assets/js/dataTables/dataTables.bootstrap.js"></script>
+
+  <link rel="shortcut icon" href="<?=base_url();?>assets/img/mebelheny.ico">
+  <script>
+   $(document).ready(function(){
+     $('#dataTables-example').dataTable();
+   });
+  </script>
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 550px}
@@ -33,16 +48,28 @@
   <?php if($this->ion_auth->is_admin()){  ?>
 
     <div class="panel panel-primary">
-     <div class="panel-heading">Rekap Barang Bulan Ini</div>
+     <div class="panel-heading"><p>Rekap Barang Bulan Ini
+       <?php
+         date_default_timezone_set("Asia/Jakarta");
+         echo " -- <strong>".date("F Y")."</strong>";?></p>
+      </div>
+
      <div class="panel-body">
+       <?php if(!empty($this->session->flashdata('flash_data'))) {
+         echo "<div class='alert alert-success'>";
+         echo "<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>";
+         echo $this->session->flashdata('flash_data');
+         echo "</div>";
+       } ?>
         <div class="row">
             <div class="col-md-6">
               <div class="panel panel-info">
                <div class="panel-heading"><span class="glyphicon glyphicon-arrow-down"></span> Rekap Barang Masuk</div>
-               <div class="panel-body">
+
+               <div class="table-responsive panel-body">
 
                  <?php if( !empty($barang_masuk) ) { ?>
-                 <table class= "table table-hover table-responsive" id="dataTables-example">
+                 <table class= "table table-hover " id="dataTables-example">
                    <thead>
                     <tr>
                      <td><strong>Nama Barang</strong></td>
@@ -81,10 +108,10 @@
             <div class="col-md-6">
               <div class="panel panel-info">
                <div class="panel-heading"><span class="glyphicon glyphicon-arrow-up"></span> Rekap Penjualan</div>
-               <div class="panel-body">
+               <div class="panel-body table-responsive">
 
                  <?php if( !empty($barang_keluar) ) { ?>
-                 <table class= "table table-hover" id="dataTables-example">
+                 <table class= "table table-hover " id="dataTables-example">
                    <thead>
                     <tr>
                      <td><strong>Nama Barang</strong></td>
@@ -125,34 +152,40 @@
 
     <div class="panel panel-primary">
       <div class="panel-heading">Tabel Stok Barang</div>
-        <div class="panel-body">
-      <?php if( !empty($barang) ) { ?>
-        <table class= "table table-hover table-responsive">
-          <thead>
-           <tr>
-            <td><strong>Nama Barang</strong></td>
-            <td><strong>Jenis</strong></td>
-            <td><strong>Jumlah</strong></td>
-            <td><strong>Penjualan</strong></td>
+        <div class="table-responsive panel-body">
+          <?php if(!empty($this->session->flashdata('flash_data'))) {
+            echo "<div class='alert alert-success'>";
+            echo "<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>";
+            echo $this->session->flashdata('flash_data');
+            echo "</div>";
+          } ?>
+        <?php if( !empty($barang) ) { ?>
+          <table class= "table table-hover table-responsive" id="dataTables-example">
+            <thead>
+             <tr>
+              <td><strong>Nama Barang</strong></td>
+              <td><strong>Jenis</strong></td>
+              <td><strong>Jumlah</strong></td>
+              <td><strong>Penjualan</strong></td>
+            </tr>
+          </thead>
+
+          <?php foreach($barang as $bo):?>
+          <tr>
+           <td><?php echo $bo->nama_barang;?></td>
+           <td><?php echo $bo->jenis_barang;?></td>
+           <td><?php echo $bo->jumlah;?></td>
+           <td><a href="<?php echo base_url();?>penjualan/<?php echo $bo->id_barang?>/catat"><span class="glyphicon glyphicon-plus-sign"></a></span>
+          </a></td>
           </tr>
-        </thead>
+          <?php endforeach;
+          }else{?>
+          <div class="alert alert-warning"> Data kosong! </div>
+         <?php } ?>
+        </table>
+      </div>
 
-        <?php foreach($barang as $bo):?>
-        <tr>
-         <td><?php echo $bo->nama_barang;?></td>
-         <td><?php echo $bo->jenis_barang;?></td>
-         <td><?php echo $bo->jumlah;?></td>
-         <td><a href="<?php echo base_url();?>penjualan/<?php echo $bo->id_barang?>/catat"><span class="glyphicon glyphicon-plus-sign"></a></span>
-        </a></td>
-        </tr>
-        <?php endforeach;
-        }else{?>
-        <div class="alert alert-warning"> Data kosong! </div>
-       <?php } ?>
-      </table>
-    </div>
-
-  <?php } ?>
+    <?php } ?>
 
 </div>
 </body>
