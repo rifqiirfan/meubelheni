@@ -7,9 +7,24 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/superadmin_style.css">
   <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Roboto:400,700'>
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/superadmin_style.css">
+  <link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/dataTabless.bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/metisMenu.min.css">
+  <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Roboto:400,700'>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link rel="shortcut icon" href="<?=base_url();?>assets/img/mebelheny.ico"-->
+  <script src="<?=base_url();?>assets/js/metisMenu/metisMenu.min.js"></script>
+  <script src="<?=base_url();?>assets/js/dataTables/jquery.dataTables.js"></script>
+  <script src="<?=base_url();?>assets/js/dataTables/dataTables.bootstrap.js"></script>
+
+  <link rel="shortcut icon" href="<?=base_url();?>assets/img/mebelheny.ico">
+  <script>
+   $(document).ready(function(){
+     $('#dataTables-example').dataTable();
+   });
+  </script>
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 550px}
@@ -145,7 +160,7 @@
             echo "</div>";
           } ?>
         <?php if( !empty($barang) ) { ?>
-          <table class= "table table-hover ">
+          <table class= "table table-hover table-responsive" id="dataTables-example">
             <thead>
              <tr>
               <td><strong>Nama Barang</strong></td>
